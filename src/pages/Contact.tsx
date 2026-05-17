@@ -62,7 +62,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#1a3a2a] text-sm uppercase tracking-wider">{t('contact.emailUs')}</h3>
-                    <p className="text-gray-600">info@kmahealthtourism.com</p>
+                    <p className="text-gray-600">info@shifaway.com</p>
                     <p className="text-gray-400 text-sm">{t('contact.responseTime')}</p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function Contact() {
               <div className="mb-8">
                 <h3 className="font-semibold text-[#1a3a2a] text-sm uppercase tracking-wider mb-3">{t('contact.connectWithUs')}</h3>
                 <div className="flex gap-3">
-                  <a href="https://www.instagram.com/kmawellnesstourism" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="https://www.instagram.com/shifaway" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
                     <Instagram size={18} />
                   </a>
                   <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
@@ -214,12 +214,12 @@ export default function Contact() {
           {t('contact.instagramText')}
         </p>
         <a
-          href="https://www.instagram.com/kmawellnesstourism"
+          href="https://www.instagram.com/shifaway"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-[#c9a84c] font-semibold hover:underline"
         >
-          <Instagram size={16} /> @kmawellnesstourism
+          <Instagram size={16} /> @shifaway
         </a>
       </section>
     </div>

@@ -14,7 +14,7 @@ const policies = {
     sections: [
       {
         title: '1. Introduction',
-        body: 'K.M.A Wellness Tourism is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and medical tourism facilitation services.',
+        body: 'Shifaway is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and medical tourism facilitation services.',
       },
       {
         title: '2. Information We Collect',
@@ -50,7 +50,7 @@ const policies = {
       },
       {
         title: '10. Contact Us',
-        body: 'For questions about this Privacy Policy or your data rights, contact K.M.A Wellness Tourism at info@kmahealthtourism.com, +91 98457 77777 / +91 99007 77777, Bengaluru, Karnataka, India - 560084.',
+        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at info@shifaway.com, +91 98457 77777 / +91 99007 77777, Bengaluru, Karnataka, India - 560084.',
       },
     ],
   },
@@ -62,11 +62,11 @@ const policies = {
     sections: [
       {
         title: '1. Agreement to Terms',
-        body: 'By accessing and using the K.M.A Wellness Tourism website and services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access or use our services.',
+        body: 'By accessing and using the Shifaway website and services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access or use our services.',
       },
       {
         title: '2. Our Services',
-        body: 'K.M.A Wellness Tourism acts as a medical tourism facilitator. We coordinate medical consultations, hospital referrals, travel arrangements, accommodation, transport, documentation assistance, interpretation, and leisure arrangements. We do not directly provide medical treatment.',
+        body: 'Shifaway acts as a medical tourism facilitator. We coordinate medical consultations, hospital referrals, travel arrangements, accommodation, transport, documentation assistance, interpretation, and leisure arrangements. We do not directly provide medical treatment.',
       },
       {
         title: '3. Cost Estimates & Pricing',
@@ -78,7 +78,7 @@ const policies = {
       },
       {
         title: '5. Medical Disclaimer',
-        body: 'K.M.A Wellness Tourism does not provide medical advice, diagnosis, or treatment. Medical decisions are made between patients and licensed professionals at partner hospitals.',
+        body: 'Shifaway does not provide medical advice, diagnosis, or treatment. Medical decisions are made between patients and licensed professionals at partner hospitals.',
       },
       {
         title: '6. User Responsibilities',
@@ -90,11 +90,11 @@ const policies = {
       },
       {
         title: '8. Limitation of Liability',
-        body: 'K.M.A Wellness Tourism is not liable for medical outcomes, travel disruptions, visa rejections, indirect damages, or circumstances beyond reasonable control. Our role is limited to facilitation services.',
+        body: 'Shifaway is not liable for medical outcomes, travel disruptions, visa rejections, indirect damages, or circumstances beyond reasonable control. Our role is limited to facilitation services.',
       },
       {
         title: '9. Intellectual Property',
-        body: 'All website content, including text, graphics, logos, images, and software, is the property of K.M.A Wellness Tourism or its suppliers and may not be reproduced without permission.',
+        body: 'All website content, including text, graphics, logos, images, and software, is the property of Shifaway or its suppliers and may not be reproduced without permission.',
       },
       {
         title: '10. Governing Law',
@@ -106,7 +106,7 @@ const policies = {
       },
       {
         title: '12. Contact Us',
-        body: 'For questions about these Terms, contact K.M.A Wellness Tourism at info@kmahealthtourism.com, +91 98457 77777 / +91 99007 77777, Bengaluru, Karnataka, India - 560084.',
+        body: 'For questions about these Terms, contact Shifaway at info@shifaway.com, +91 98457 77777 / +91 99007 77777, Bengaluru, Karnataka, India - 560084.',
       },
     ],
   },

@@ -4,22 +4,68 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="KMA Wellness Tourism coordinates premium medical tourism, treatment planning, travel support, and recovery stays with trusted healthcare partners in India." />
-    <title>KMA Wellness Tourism | Premium Medical Tourism in India</title>
+    <meta name="description" content="Shifaway coordinates premium medical tourism, treatment planning, travel support, and recovery stays with trusted healthcare partners in India." />
+    <title>Shifaway | Premium Medical Tourism in India</title>
+    <style>
+      body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      html[dir="rtl"] .shell-ltr { display: none; }
+      html[dir="ltr"] .shell-rtl { display: none; }
+      .shell { min-height: 100vh; background: #fff; }
+      .shell nav { background: #1a3a2a; color: #fff; }
+      .shell nav > div { height: 4rem; max-width: 80rem; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; justify-content: space-between; }
+      .shell nav a { color: inherit; text-decoration: none; }
+      .shell nav .flex { display: flex; align-items: center; gap: .5rem; }
+      .shell nav .rounded { border-radius: .25rem; }
+      .shell nav .bg-\[\#c9a84c\] { background: #c9a84c; }
+      .shell nav .text-\[\#1a3a2a\] { color: #1a3a2a; }
+      .shell nav .font-bold { font-weight: 700; }
+      .shell nav .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+      .shell nav .px-2 { padding-left: .5rem; padding-right: .5rem; }
+      .shell nav .py-1 { padding-top: .25rem; padding-bottom: .25rem; }
+      .shell nav .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .shell nav .py-2 { padding-top: .5rem; padding-bottom: .5rem; }
+      .shell nav .text-xs { font-size: .75rem; line-height: 1rem; }
+      .shell nav .uppercase { text-transform: uppercase; }
+      .shell nav .tracking-wider { letter-spacing: .05em; }
+      .shell main section { position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: #102c20; color: #fff; }
+      .shell main section > div:first-child { position: absolute; inset: 0; background: radial-gradient(circle at 75% 35%, rgba(201,168,76,.18), transparent 32%), linear-gradient(120deg, #1a3a2a 0%, #102c20 55%, #07150f 100%); }
+      .shell main section > div:nth-child(2) { position: absolute; inset: 0; opacity: .3; background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 42px 42px; }
+      .shell main section > div:nth-child(3) { position: relative; z-index: 20; max-width: 80rem; margin: 0 auto; padding: 5rem 1rem; }
+      .shell h1 { margin: 0 0 1rem; font-size: 3rem; line-height: 1; font-weight: 700; }
+      .shell h1 .italic { font-style: italic; color: #c9a84c; }
+      .shell p { margin: 0 0 2rem; max-width: 32rem; font-size: 1.125rem; line-height: 1.75rem; color: #d1d5db; }
+      .shell main a { text-decoration: none; }
+      @media (min-width: 768px) { .shell h1 { font-size: 4.5rem; line-height: 1; } }
+    </style>
+    <script>
+      (() => {
+        const language = localStorage.getItem('shifaway-lang') || navigator.languages?.[0] || navigator.language || 'en'
+        const isArabic = language.toLowerCase().startsWith('ar')
+        document.documentElement.lang = isArabic ? 'ar' : 'en'
+        document.documentElement.dir = isArabic ? 'rtl' : 'ltr'
+        window.__SHIFAWAY_INITIAL_LANGUAGE__ = isArabic ? 'ar' : 'en'
+      })()
+    </script>
   </head>
   <body>
     <div id="root">
-      <div class="min-h-screen bg-white">
+      <div class="shell min-h-screen bg-white">
         <nav class="bg-[#1a3a2a] text-white">
           <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
             <div class="flex items-center gap-2">
-              <div class="rounded bg-[#c9a84c] px-2 py-1 text-lg font-bold text-[#1a3a2a]">KMA</div>
+              <div class="rounded bg-[#c9a84c] px-2 py-1 text-lg font-bold text-[#1a3a2a]">Shifaway</div>
               <div class="hidden sm:block">
-                <div class="text-xs font-semibold uppercase tracking-wider">Khalid Mahmood Aboushar</div>
-                <div class="text-[10px] uppercase tracking-widest text-gray-300">Wellness Tourism</div>
+                <div class="text-xs font-semibold uppercase tracking-wider">Shifaway</div>
+                <div class="text-[10px] uppercase tracking-widest text-gray-300">
+                  <span class="shell-ltr">Wellness Tourism</span>
+                  <span class="shell-rtl">السياحة العلاجية</span>
+                </div>
               </div>
             </div>
-            <a href="#/contact" class="rounded bg-[#c9a84c] px-5 py-2 text-xs font-bold uppercase tracking-wider text-[#1a3a2a]">Estimate Your Cost</a>
+            <a href="#/contact" class="rounded bg-[#c9a84c] px-5 py-2 text-xs font-bold uppercase tracking-wider text-[#1a3a2a]">
+              <span class="shell-ltr">Estimate Your Cost</span>
+              <span class="shell-rtl">احصل على تقدير التكلفة</span>
+            </a>
           </div>
         </nav>
         <main>
@@ -28,13 +74,28 @@
             <div class="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:42px_42px]"></div>
             <div class="relative z-20 mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
               <div class="mb-8 inline-flex items-center gap-2 rounded-full border border-[#c9a84c]/40 bg-[#c9a84c]/20 px-4 py-1.5">
-                <span class="text-xs font-semibold uppercase tracking-widest text-[#c9a84c]">The Gold Standard of Health Tourism</span>
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#c9a84c]">
+                  <span class="shell-ltr">The Gold Standard of Health Tourism</span>
+                  <span class="shell-rtl">المعيار الذهبي للسياحة العلاجية</span>
+                </span>
               </div>
-              <h1 class="mb-4 text-5xl font-bold leading-tight md:text-7xl">Luxury<br /><span class="italic text-[#c9a84c]">Healing</span><br />Redefined.</h1>
-              <p class="mb-8 max-w-lg text-lg text-gray-300">Premier medical facilitation in Bengaluru's most prestigious hospitals, paired with opulent 5-star recovery stays.</p>
+              <h1 class="mb-4 text-5xl font-bold leading-tight md:text-7xl">
+                <span class="shell-ltr">Luxury<br /><span class="italic text-[#c9a84c]">Healing</span><br />Redefined.</span>
+                <span class="shell-rtl">فخامة<br /><span class="italic text-[#c9a84c]">الشفاء</span><br />بمفهوم جديد.</span>
+              </h1>
+              <p class="mb-8 max-w-lg text-lg text-gray-300">
+                <span class="shell-ltr">Premier medical facilitation in Bengaluru's most prestigious hospitals, paired with opulent 5-star recovery stays.</span>
+                <span class="shell-rtl">تيسير طبي فاخر في أرقى مستشفيات بنغالورو، مع إقامات تعافٍ فاخرة من فئة خمس نجوم.</span>
+              </p>
               <div class="flex flex-wrap gap-4">
-                <a href="#/contact" class="inline-flex items-center gap-2 rounded bg-[#c9a84c] px-8 py-3 text-sm font-bold uppercase tracking-wider text-[#1a3a2a]">Get Your Estimate</a>
-                <a href="#/contact" class="rounded border border-white/30 px-8 py-3 text-sm font-bold uppercase tracking-wider text-white">Contact Us</a>
+                <a href="#/contact" class="inline-flex items-center gap-2 rounded bg-[#c9a84c] px-8 py-3 text-sm font-bold uppercase tracking-wider text-[#1a3a2a]">
+                  <span class="shell-ltr">Get Your Estimate</span>
+                  <span class="shell-rtl">احصل على تقدير التكلفة</span>
+                </a>
+                <a href="#/contact" class="rounded border border-white/30 px-8 py-3 text-sm font-bold uppercase tracking-wider text-white">
+                  <span class="shell-ltr">Contact Us</span>
+                  <span class="shell-rtl">اتصل بنا</span>
+                </a>
               </div>
             </div>
           </section>

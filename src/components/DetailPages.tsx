@@ -189,7 +189,7 @@ export function PartnerDetailPage({ detail, backTo }: PartnerDetailPageProps) {
 
             <div className="rounded-[2rem] bg-[#1a3a2a] p-8 text-white">
               <h2 className="mb-3 text-2xl font-bold">Why {detail.name} for Your Healing?</h2>
-              <p className="text-white/70">Partnering with {detail.name} ensures that you receive not just a service, but a holistic experience tailored to your recovery. Their commitment to excellence aligns perfectly with KMA's philosophy of care, comfort, and clinical precision.</p>
+              <p className="text-white/70">Partnering with {detail.name} ensures that you receive not just a service, but a holistic experience tailored to your recovery. Their commitment to excellence aligns perfectly with Shifaway's philosophy of care, comfort, and clinical precision.</p>
             </div>
           </div>
         </div>

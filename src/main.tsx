@@ -4,9 +4,7 @@ const rootElement = document.getElementById('root')
 let appStarted = false
 
 function shouldStartImmediately() {
-  const language = window.localStorage.getItem('kma-lang') || window.navigator.languages?.[0] || window.navigator.language
-
-  return Boolean(window.location.hash && window.location.hash !== '#/' && window.location.hash !== '#') || language?.toLowerCase().startsWith('ar')
+  return Boolean(window.location.hash && window.location.hash !== '#/' && window.location.hash !== '#')
 }
 
 async function startApp() {
@@ -44,9 +42,4 @@ if (shouldStartImmediately()) {
   }
 
   document.addEventListener('click', startFromLink)
-  window.addEventListener('hashchange', () => { void startApp() }, { once: true })
-  window.addEventListener('scroll', () => { void startApp() }, { once: true, passive: true })
-  window.addEventListener('pointermove', () => { void startApp() }, { once: true, passive: true })
-  window.addEventListener('touchstart', () => { void startApp() }, { once: true, passive: true })
-  window.addEventListener('keydown', () => { void startApp() }, { once: true })
 }

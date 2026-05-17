@@ -76,7 +76,7 @@ export default function Home() {
           decoding="async"
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
-          onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/1920x1080/1a3a2a/c9a84c/png?text=KMA+Wellness' }}
+          onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/1920x1080/1a3a2a/c9a84c/png?text=Shifaway' }}
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 rounded-full px-4 py-1.5 mb-8">
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=420&h=490&fit=crop&auto=format&q=45"
-                alt="Khalid Mahmood Aboushar"
+                alt="Shifaway"
                 width={420}
                 height={490}
                 loading="lazy"

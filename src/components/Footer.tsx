@@ -49,16 +49,16 @@ export default function Footer() {
               {t('footer.tagline')}
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/kmawellnesstourism" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on Instagram" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.instagram.com/shifaway" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Instagram" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on X" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on X" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on LinkedIn" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on LinkedIn" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on Facebook" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Facebook" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Facebook size={18} />
               </a>
             </div>
@@ -154,7 +154,7 @@ export default function Footer() {
                 <Mail size={16} className="text-[#c9a84c] mt-0.5 shrink-0" />
                 <div>
                   <div className="text-sm font-semibold">{t('footer.email')}</div>
-                  <p className="text-gray-300 text-sm">info@kmahealth.com</p>
+                  <p className="text-gray-300 text-sm">info@shifaway.com</p>
                 </div>
               </div>
             </div>

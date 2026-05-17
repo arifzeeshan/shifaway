@@ -17,7 +17,7 @@ function detectInitialLanguage(): SupportedLanguage {
     return 'en'
   }
 
-  const storedLanguage = window.localStorage.getItem('kma-lang')
+  const storedLanguage = window.localStorage.getItem('shifaway-lang')
 
   if (storedLanguage) {
     return normalizeLanguage(storedLanguage)
@@ -49,7 +49,7 @@ export async function changeLanguage(language: string) {
   const resolvedLanguage = await loadLanguage(language)
 
   if (typeof window !== 'undefined') {
-    window.localStorage.setItem('kma-lang', resolvedLanguage)
+    window.localStorage.setItem('shifaway-lang', resolvedLanguage)
   }
 
   return i18n.changeLanguage(resolvedLanguage)

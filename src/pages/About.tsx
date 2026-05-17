@@ -42,7 +42,7 @@ export default function About() {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop"
-                alt="Khalid Mahmood Aboushar - Founder & CEO"
+                alt="Shifaway"
                 className="rounded-2xl shadow-xl w-full max-w-md object-cover"
                 onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/1a3a2a/c9a84c/png?text=Founder' }}
               />

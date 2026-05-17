@@ -27,9 +27,9 @@
     "viewAllTreatments": "View All Treatments"
   },
   "brand": {
-    "founderName": "Khalid Mahmood Aboushar",
-    "founderTitle": "Founder & CEO",
-    "founderRole": "Former P.R.O for the Consul General of UAE in India",
+    "founderName": "Shifaway",
+    "founderTitle": "Medical Tourism Platform",
+    "founderRole": "Personalized healthcare travel and recovery support",
     "wellnessTourism": "Wellness Tourism"
   },
   "home": {
@@ -41,8 +41,8 @@
     "excellenceLabel": "Excellence",
     "jciAccredited": "JCI Accredited",
     "jciDesc": "Partnered with India's most advanced clinical centers.",
-    "leadership": "Leadership",
-    "founderHeading": "The Face Behind K.M.A.",
+    "leadership": "Our Platform",
+    "founderHeading": "The Care Platform Behind Shifaway",
     "founderQuote": "\"We are not just facilitators; we are your family in a foreign land. Our mission is to ensure that every patient who travels to India returns home not just healed, but touched by the warmth and care they received.\"",
     "whyChooseUs": "Why Choose Us",
     "unmatchedStandards": "Unmatched Standards.",
@@ -53,7 +53,7 @@
     "legacyHeading": "Serving the World with Indian Hospitality for 25+ Years.",
     "legacyQuote": "\"We consider, protect, and provide for you as if you were our own family.\"",
     "beyondBorders": "Beyond Borders.",
-    "beyondBordersText": "K.M.A Wellness Tourism isn't just a facilitator; we are your guardians in a foreign land. We bridge the gap between world-class Indian healthcare and global patients seeking hope.",
+    "beyondBordersText": "Shifaway isn't just a facilitator; we are your guardians in a foreign land. We bridge the gap between world-class Indian healthcare and global patients seeking hope.",
     "ourHeritage": "Our Heritage",
     "heritageDesc": "Based in Bengaluru, serving the world.",
     "ourVision": "Our Vision",
@@ -149,7 +149,7 @@
         "desc": "Our medical board reviews the plan to ensure clinical excellence and cost efficiency."
       },
       "upgrade": {
-        "title": "The K.M.A Upgrade",
+        "title": "The Shifaway Upgrade",
         "desc": "We match the price but upgrade your hospital suite and recovery hotel."
       }
     }
@@ -157,13 +157,13 @@
   "about": {
     "story": "Our Story",
     "titleStart": "About",
-    "titleBrand": "K.M.A.",
+    "titleBrand": "Shifaway",
     "subtitle": "Bridging the gap between world-class Indian healthcare and global patients seeking hope, with the warmth of royal hospitality.",
     "visionOf": "A Vision of",
     "compassionateCare": "Compassionate Care.",
-    "founderText": "Founded by Khalid Mahmood Aboushar, K.M.A Wellness Tourism was born from a deep-seated desire to make world-class healthcare accessible to everyone, regardless of borders.",
+    "founderText": "Shifaway was born from a deep-seated desire to make world-class healthcare accessible to everyone, regardless of borders.",
     "founderQuote": "\"We are not just facilitators; we are your family in a foreign land. Our mission is to ensure that every patient who travels to India returns home not just healed, but touched by the warmth and care they received.\"",
-    "trustQuote": "\"Healing is a journey of trust. At K.M.A, we honor that trust with transparency, excellence, and unwavering support.\"",
+    "trustQuote": "\"Healing is a journey of trust. At Shifaway, we honor that trust with transparency, excellence, and unwavering support.\"",
     "missionTitle": "Our Mission",
     "missionText": "To provide affordable, accessible, and high-quality healthcare solutions with a touch of royal hospitality. We strive to remove the stress from medical travel, handling every logistical detail so our patients can focus entirely on their recovery.",
     "visionTitle": "Our Vision",
@@ -189,7 +189,7 @@
     "titleStart": "Our",
     "titleHighlight": "Services.",
     "subtitle": "We provide a complete ecosystem of luxury support services, handling every logistical detail so you can focus entirely on your healing journey.",
-    "standardBadge": "The KMA Standard",
+    "standardBadge": "The Shifaway Standard",
     "standardTitle": "More Than Just Facilitation.",
     "standardText": "We believe that healing is influenced by your environment and state of mind. Our services are designed not just to move you from point A to point B, but to wrap you in a cocoon of comfort, luxury, and care throughout your journey.",
     "highlights": {
@@ -437,7 +437,7 @@
   },
   "process": {
     "badge": "Our Methodology",
-    "titleStart": "The K.M.A",
+    "titleStart": "The Shifaway",
     "titleHighlight": "Experience.",
     "steps": {
       "consultation": {
@@ -538,7 +538,7 @@
     "supportText": "24/7 Concierge Available",
     "directLines": "Direct Lines",
     "email": "Email",
-    "copyright": "© 2026 K.M.A WELLNESS TOURISM",
+    "copyright": "© 2026 SHIFAWAY",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

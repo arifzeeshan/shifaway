@@ -50,7 +50,7 @@ const services = [
   },
 ]
 
-const kmaStandard = [
+const shifawayStandard = [
   { icon: Clock, key: 'access' },
   { icon: Award, key: 'partners' },
   { icon: Eye, key: 'transparent' },
@@ -130,16 +130,16 @@ export default function Services() {
         </div>
       </section>
 
-      {/* KMA Standard */}
+      {/* Shifaway Standard */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=500&fit=crop"
-                alt="KMA Standard of care"
+                alt="Shifaway Standard of care"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/1a3a2a/c9a84c/png?text=KMA+Standard' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/1a3a2a/c9a84c/png?text=Shifaway+Standard' }}
               />
             </div>
             <div>
@@ -152,7 +152,7 @@ export default function Services() {
                 {t('services.standardText')}
               </p>
               <div className="space-y-6">
-                {kmaStandard.map((item) => (
+                {shifawayStandard.map((item) => (
                   <div key={item.key} className="flex items-start gap-4">
                     <div className="bg-[#1a3a2a] p-2.5 rounded-lg shrink-0">
                       <item.icon size={20} className="text-[#c9a84c]" />
