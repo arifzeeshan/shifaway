@@ -27,15 +27,15 @@ export default function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#1a3a2a] text-white py-20">
+      <section className="bg-[#047857] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 rounded-full px-4 py-1.5 mb-6">
-            <Award size={14} className="text-[#c9a84c]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#c9a84c]">{t('contact.badge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-6">
+            <Award size={14} className="text-[#f4c542]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('contact.badge')}</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             {t('contact.titleStart')}<br />
-            <span className="italic text-[#c9a84c]">{t('contact.titleHighlight')}</span>
+            <span className="italic text-[#f4c542]">{t('contact.titleHighlight')}</span>
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
             {t('contact.subtitle')}
@@ -49,41 +49,41 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left - Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold text-[#1a3a2a] mb-2">{t('contact.reachOut')}</h2>
-              <h2 className="text-3xl font-bold italic text-[#c9a84c] mb-6">{t('contact.conciergeTeam')}</h2>
+              <h2 className="text-3xl font-bold text-[#047857] mb-2">{t('contact.reachOut')}</h2>
+              <h2 className="text-3xl font-bold italic text-[#f4c542] mb-6">{t('contact.conciergeTeam')}</h2>
               <p className="text-gray-600 mb-8">
                 {t('contact.intro')}
               </p>
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#c9a84c]/10 p-3 rounded-lg shrink-0">
-                    <Phone size={20} className="text-[#c9a84c]" />
+                  <div className="bg-[#f4c542]/10 p-3 rounded-lg shrink-0">
+                    <Phone size={20} className="text-[#f4c542]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#1a3a2a] text-sm uppercase tracking-wider">{t('contact.directLines')}</h3>
-                    <a href="tel:+919986879931" dir="ltr" className="block text-gray-600 hover:text-[#c9a84c] transition-colors">+91 99868 79931</a>
-                    <a href="tel:+918892536694" dir="ltr" className="block text-gray-600 hover:text-[#c9a84c] transition-colors">+91 8892536694</a>
+                    <h3 className="font-bold text-[#047857] text-sm uppercase tracking-wider">{t('contact.directLines')}</h3>
+                    <a href="tel:+919986879931" dir="ltr" className="block text-gray-600 hover:text-[#f4c542] transition-colors">+91 99868 79931</a>
+                    <a href="tel:+918892536694" dir="ltr" className="block text-gray-600 hover:text-[#f4c542] transition-colors">+91 8892536694</a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#c9a84c]/10 p-3 rounded-lg shrink-0">
-                    <Mail size={20} className="text-[#c9a84c]" />
+                  <div className="bg-[#f4c542]/10 p-3 rounded-lg shrink-0">
+                    <Mail size={20} className="text-[#f4c542]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#1a3a2a] text-sm uppercase tracking-wider">{t('contact.emailUs')}</h3>
-                    <p className="text-gray-600">info@shifaway.com</p>
+                    <h3 className="font-bold text-[#047857] text-sm uppercase tracking-wider">{t('contact.emailUs')}</h3>
+                    <p className="text-gray-600">abudanish@shifaway.com</p>
                     <p className="text-gray-400 text-sm">{t('contact.responseTime')}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#c9a84c]/10 p-3 rounded-lg shrink-0">
-                    <MapPin size={20} className="text-[#c9a84c]" />
+                  <div className="bg-[#f4c542]/10 p-3 rounded-lg shrink-0">
+                    <MapPin size={20} className="text-[#f4c542]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#1a3a2a] text-sm uppercase tracking-wider">{t('contact.headquarters')}</h3>
+                    <h3 className="font-bold text-[#047857] text-sm uppercase tracking-wider">{t('contact.headquarters')}</h3>
                     <p className="text-gray-600">{t('contact.city')}</p>
                     <p className="text-gray-600">{t('contact.countryPostal')}</p>
                   </div>
@@ -91,21 +91,21 @@ export default function Contact() {
               </div>
 
               <div className="mb-8">
-                <h3 className="font-semibold text-[#1a3a2a] text-sm uppercase tracking-wider mb-3">{t('contact.connectWithUs')}</h3>
+                <h3 className="font-semibold text-[#047857] text-sm uppercase tracking-wider mb-3">{t('contact.connectWithUs')}</h3>
                 <div className="flex gap-3">
-                  <a href="https://www.instagram.com/shifaway.blr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="https://www.instagram.com/shifaway.blr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#f4c542] hover:text-[#f4c542] text-gray-500 transition-colors">
                     <Instagram size={18} />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#f4c542] hover:text-[#f4c542] text-gray-500 transition-colors">
                     <Twitter size={18} />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#f4c542] hover:text-[#f4c542] text-gray-500 transition-colors">
                     <Linkedin size={18} />
                   </a>
-                  <a href="https://www.facebook.com/Shafiway.Blr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="https://www.facebook.com/Shafiway.Blr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#f4c542] hover:text-[#f4c542] text-gray-500 transition-colors">
                     <Facebook size={18} />
                   </a>
-                  <a href="https://snapchat.com/t/lTmWj5CR" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="https://snapchat.com/t/lTmWj5CR" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#f4c542] hover:text-[#f4c542] text-gray-500 transition-colors">
                     <Ghost size={18} />
                   </a>
                 </div>
@@ -115,7 +115,7 @@ export default function Contact() {
             {/* Right - Form */}
             <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-[#1a3a2a]">{t('contact.formTitleStart')} <span className="italic text-[#c9a84c]">{t('contact.formTitleHighlight')}</span></h3>
+                <h3 className="text-2xl font-bold text-[#047857]">{t('contact.formTitleStart')} <span className="italic text-[#f4c542]">{t('contact.formTitleHighlight')}</span></h3>
                 <p className="text-gray-500 text-sm">{t('contact.formIntro')}</p>
               </div>
 
@@ -128,7 +128,7 @@ export default function Contact() {
                       placeholder={t('contact.fullNamePlaceholder')}
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a84c] transition-colors"
+                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#f4c542] transition-colors"
                       required
                     />
                   </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                       placeholder={t('contact.emailPlaceholder')}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a84c] transition-colors"
+                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#f4c542] transition-colors"
                       required
                     />
                   </div>
@@ -153,7 +153,7 @@ export default function Contact() {
                       placeholder={t('contact.phonePlaceholder')}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a84c] transition-colors"
+                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#f4c542] transition-colors"
                       required
                     />
                   </div>
@@ -164,7 +164,7 @@ export default function Contact() {
                       placeholder={t('contact.countryPlaceholder')}
                       value={formData.country}
                       onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a84c] transition-colors"
+                      className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#f4c542] transition-colors"
                       required
                     />
                   </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                   <select
                     value={formData.treatmentType}
                     onChange={(e) => setFormData({ ...formData, treatmentType: e.target.value })}
-                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a84c] transition-colors bg-white"
+                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#f4c542] transition-colors bg-white"
                     required
                   >
                     <option value="">{t('contact.selectTreatmentType')}</option>
@@ -197,14 +197,14 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={4}
-                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a84c] transition-colors resize-none"
+                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#f4c542] transition-colors resize-none"
                     required
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#c9a84c] text-[#1a3a2a] py-3 rounded-lg font-bold text-sm tracking-wider uppercase hover:bg-[#b8963e] transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-[#f4c542] text-[#064e3b] py-3 rounded-lg font-bold text-sm tracking-wider uppercase hover:bg-[#d9a520] transition-colors flex items-center justify-center gap-2"
                 >
                   {t('contact.connectWithUs')} <Send size={16} />
                 </button>
@@ -219,7 +219,7 @@ export default function Contact() {
       </section>
 
       {/* Instagram CTA */}
-      <section className="py-16 bg-[#1a3a2a] text-center">
+      <section className="py-16 bg-[#047857] text-center">
         <div className="bg-gradient-to-r from-purple-600 to-pink-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
           <Instagram size={28} className="text-white" />
         </div>
@@ -231,7 +231,7 @@ export default function Contact() {
           href="https://www.instagram.com/shifaway.blr"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-[#c9a84c] font-semibold hover:underline"
+          className="inline-flex items-center gap-2 text-[#f4c542] font-semibold hover:underline"
         >
           <Instagram size={16} /> @shifaway.blr
         </a>

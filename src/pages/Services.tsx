@@ -15,19 +15,19 @@ const services = [
   {
     icon: Plane,
     key: 'travel',
-    img: 'https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=600&h=400&fit=crop',
+    img: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop&auto=format&q=70',
     path: '/services/travel',
   },
   {
     icon: Car,
     key: 'luxuryTransport',
-    img: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=600&h=400&fit=crop',
+    img: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&h=400&fit=crop&auto=format&q=70',
     path: '/services/luxury-transport',
   },
   {
     icon: Hotel,
     key: 'accommodation',
-    img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop',
+    img: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop&auto=format&q=70',
     path: '/services/accommodation',
   },
   {
@@ -76,14 +76,14 @@ export default function Services() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#1a3a2a] text-white py-20">
+      <section className="bg-[#047857] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 rounded-full px-4 py-1.5 mb-6">
-            <Star size={14} className="text-[#c9a84c]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#c9a84c]">{t('services.badge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-6">
+            <Star size={14} className="text-[#f4c542]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('services.badge')}</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            {t('services.titleStart')} <span className="italic text-[#c9a84c]">{t('services.titleHighlight')}</span>
+            {t('services.titleStart')} <span className="italic text-[#f4c542]">{t('services.titleHighlight')}</span>
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg mb-12">
             {t('services.subtitle')}
@@ -91,7 +91,7 @@ export default function Services() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             {highlights.map((h) => (
               <div key={h.key} className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-                <h.icon size={24} className="text-[#c9a84c] mx-auto mb-2" />
+                <h.icon size={24} className="text-[#f4c542] mx-auto mb-2" />
                 <h3 className="font-bold text-sm">{t(`services.highlights.${h.key}.title`)}</h3>
                 <p className="text-gray-300 text-xs mt-1">{t(`services.highlights.${h.key}.desc`)}</p>
               </div>
@@ -111,16 +111,16 @@ export default function Services() {
                     src={s.img}
                     alt={t(`services.items.${s.key}.title`)}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/1a3a2a/c9a84c/png?text=${encodeURIComponent(t(`services.items.${s.key}.title`))}` }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/047857/f4c542/png?text=${encodeURIComponent(t(`services.items.${s.key}.title`))}` }}
                   />
                 </div>
                 <div className="p-6">
-                  <div className="bg-[#1a3a2a] w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-                    <s.icon size={20} className="text-[#c9a84c]" />
+                  <div className="bg-[#047857] w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+                    <s.icon size={20} className="text-[#f4c542]" />
                   </div>
-                  <h3 className="font-bold text-lg text-[#1a3a2a] group-hover:text-[#c9a84c] transition-colors mb-2">{t(`services.items.${s.key}.title`)}</h3>
+                  <h3 className="font-bold text-lg text-[#047857] group-hover:text-[#f4c542] transition-colors mb-2">{t(`services.items.${s.key}.title`)}</h3>
                   <p className="text-gray-500 text-sm mb-4">{t(`services.items.${s.key}.desc`)}</p>
-                  <span className="text-[#c9a84c] font-semibold text-sm inline-flex items-center gap-1">
+                  <span className="text-[#f4c542] font-semibold text-sm inline-flex items-center gap-1">
                     {t('common.learnMore')} <ChevronRight size={14} className="rtl:rotate-180" />
                   </span>
                 </div>
@@ -139,26 +139,26 @@ export default function Services() {
                 src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=500&fit=crop"
                 alt="Shifaway Standard of care"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/1a3a2a/c9a84c/png?text=Shifaway+Standard' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/047857/f4c542/png?text=Shifaway+Standard' }}
               />
             </div>
             <div>
-              <div className="inline-flex items-center gap-2 text-[#c9a84c] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#f4c542] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Award size={14} />
                 {t('services.standardBadge')}
               </div>
-              <h2 className="text-4xl font-bold text-[#1a3a2a] mb-4">{t('services.standardTitle')}</h2>
+              <h2 className="text-4xl font-bold text-[#047857] mb-4">{t('services.standardTitle')}</h2>
               <p className="text-gray-600 mb-8">
                 {t('services.standardText')}
               </p>
               <div className="space-y-6">
                 {shifawayStandard.map((item) => (
                   <div key={item.key} className="flex items-start gap-4">
-                    <div className="bg-[#1a3a2a] p-2.5 rounded-lg shrink-0">
-                      <item.icon size={20} className="text-[#c9a84c]" />
+                    <div className="bg-[#047857] p-2.5 rounded-lg shrink-0">
+                      <item.icon size={20} className="text-[#f4c542]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#1a3a2a]">{t(`services.standard.${item.key}.title`)}</h4>
+                      <h4 className="font-bold text-[#047857]">{t(`services.standard.${item.key}.title`)}</h4>
                       <p className="text-gray-500 text-sm">{t(`services.standard.${item.key}.desc`)}</p>
                     </div>
                   </div>
@@ -170,8 +170,8 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#1a3a2a] text-center">
-        <Link to="/contact" className="inline-flex items-center gap-2 bg-[#c9a84c] text-[#1a3a2a] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#b8963e] transition-colors">
+      <section className="py-16 bg-[#047857] text-center">
+        <Link to="/contact" className="inline-flex items-center gap-2 bg-[#f4c542] text-[#064e3b] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#d9a520] transition-colors">
           {t('common.estimateYourCost')} <ChevronRight size={16} className="rtl:rotate-180" />
         </Link>
       </section>

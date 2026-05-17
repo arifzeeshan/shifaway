@@ -38,20 +38,20 @@ const treatments = [
 ]
 
 const medicalPartners = [
-  { name: 'Manipal Hospitals', tagKey: 'home.partners.clinicalExcellence', path: '/partners/manipal-hospitals' },
-  { name: 'Apollo Hospitals', tagKey: 'home.partners.advancedHealthcare', path: '/partners/apollo-hospitals' },
-  { name: 'Fortis Healthcare', tagKey: 'home.partners.multiSpeciality', path: '/partners/fortis-healthcare' },
-  { name: 'Aster CMI', tagKey: 'home.partners.roboticSurgery', path: '/partners/aster-cmi' },
-  { name: 'Cytecare Hospitals', tagKey: 'home.partners.specializedCancerCare', path: '/partners/cytecare-hospitals' },
+  { name: 'Manipal Hospitals', logo: '/images/partners/manipal-hospitals.png', tagKey: 'home.partners.clinicalExcellence', path: '/partners/manipal-hospitals' },
+  { name: 'Apollo Hospitals', logo: '/images/partners/apollo-hospitals.png', tagKey: 'home.partners.advancedHealthcare', path: '/partners/apollo-hospitals' },
+  { name: 'Fortis Healthcare', logo: '/images/partners/fortis-healthcare.png', tagKey: 'home.partners.multiSpeciality', path: '/partners/fortis-healthcare' },
+  { name: 'Aster CMI', logo: '/images/partners/aster-cmi.ico', tagKey: 'home.partners.roboticSurgery', path: '/partners/aster-cmi' },
+  { name: 'Cytecare Hospitals', logo: '/images/partners/cytecare-hospitals.png', tagKey: 'home.partners.specializedCancerCare', path: '/partners/cytecare-hospitals' },
 ]
 
 const hotelPartners = [
-  { name: 'The Leela Palace', tagKey: 'home.partners.royalStay', path: '/partners/the-leela-palace' },
-  { name: 'Taj Bengaluru', tagKey: 'home.partners.heritageLuxury', path: '/partners/taj-bengaluru' },
-  { name: 'JW Marriott', tagKey: 'home.partners.eliteSuites', path: '/partners/jw-marriott' },
-  { name: 'ITC Gardenia', tagKey: 'home.partners.ecoLuxury', path: '/partners/itc-gardenia' },
-  { name: 'The Ritz-Carlton', tagKey: 'home.partners.vipRecovery', path: '/partners/the-ritz-carlton' },
-  { name: 'Conrad Bengaluru', tagKey: 'home.partners.modernOpulence', path: '/partners/conrad-bengaluru' },
+  { name: 'The Leela Palace', logo: '/images/partners/the-leela-palace.ico', tagKey: 'home.partners.royalStay', path: '/partners/the-leela-palace' },
+  { name: 'Taj Bengaluru', logo: '/images/partners/taj-bengaluru.png', tagKey: 'home.partners.heritageLuxury', path: '/partners/taj-bengaluru' },
+  { name: 'JW Marriott', logo: '/images/partners/jw-marriott.png', tagKey: 'home.partners.eliteSuites', path: '/partners/jw-marriott' },
+  { name: 'ITC Gardenia', logo: '/images/partners/itc-gardenia.svg', tagKey: 'home.partners.ecoLuxury', path: '/partners/itc-gardenia' },
+  { name: 'The Ritz-Carlton', logo: '/images/partners/the-ritz-carlton.png', tagKey: 'home.partners.vipRecovery', path: '/partners/the-ritz-carlton' },
+  { name: 'Conrad Bengaluru', logo: '/images/partners/conrad-bengaluru.png', tagKey: 'home.partners.modernOpulence', path: '/partners/conrad-bengaluru' },
 ]
 
 const priceMatchSteps = [
@@ -66,8 +66,8 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-[#1a3a2a] text-white min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a3a2a] via-[#1a3a2a]/90 to-transparent z-10" />
+      <section className="relative bg-[#047857] text-white min-h-[90vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#047857] via-[#047857]/90 to-transparent z-10" />
         <img
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=1200&fit=crop&auto=format&q=35"
           alt="Earth from space"
@@ -76,23 +76,23 @@ export default function Home() {
           decoding="async"
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
-          onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/1920x1080/1a3a2a/c9a84c/png?text=Shifaway' }}
+          onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/1920x1080/047857/f4c542/png?text=Shifaway' }}
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 rounded-full px-4 py-1.5 mb-8">
-            <Award size={14} className="text-[#c9a84c]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#c9a84c]">{t('home.heroBadge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-8">
+            <Award size={14} className="text-[#f4c542]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('home.heroBadge')}</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
             {t('home.heroTitleLuxury')}<br />
-            <span className="italic text-[#c9a84c]">{t('home.heroTitleHealing')}</span><br />
+            <span className="italic text-[#f4c542]">{t('home.heroTitleHealing')}</span><br />
             {t('home.heroTitleRedefined')}
           </h1>
           <p className="text-gray-300 max-w-lg mb-8 text-lg">
             {t('home.heroSubtitle')}
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link to="/contact" className="bg-[#c9a84c] text-[#1a3a2a] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#b8963e] transition-colors inline-flex items-center gap-2">
+            <Link to="/contact" className="bg-[#f4c542] text-[#064e3b] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#d9a520] transition-colors inline-flex items-center gap-2">
               {t('common.getYourEstimate')} <ChevronRight size={16} className="rtl:rotate-180" />
             </Link>
             <Link to="/contact" className="border border-white/30 text-white px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-white/10 transition-colors">
@@ -100,9 +100,9 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-12 bg-white/10 backdrop-blur-sm rounded-xl p-4 inline-flex items-center gap-3 max-w-sm">
-            <Award size={24} className="text-[#c9a84c]" />
+            <Award size={24} className="text-[#f4c542]" />
             <div>
-              <div className="text-xs text-[#c9a84c] font-semibold uppercase tracking-wider">{t('home.excellenceLabel')}</div>
+              <div className="text-xs text-[#f4c542] font-semibold uppercase tracking-wider">{t('home.excellenceLabel')}</div>
               <div className="font-bold text-sm">{t('home.jciAccredited')}</div>
               <div className="text-xs text-gray-300">{t('home.jciDesc')}</div>
             </div>
@@ -116,31 +116,31 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://api.dicebear.com/9.x/initials/svg?seed=Abu%20Danish&backgroundColor=1a3a2a&fontWeight=700&fontSize=40"
+                src="https://api.dicebear.com/9.x/initials/svg?seed=Abu%20Danish&backgroundColor=047857&fontWeight=700&fontSize=40"
                 alt="Shifaway"
                 width={420}
                 height={490}
                 loading="lazy"
                 decoding="async"
                 className="rounded-2xl shadow-xl w-full max-w-md object-cover"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/1a3a2a/c9a84c/png?text=Founder' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/047857/f4c542/png?text=Founder' }}
               />
               <div className="absolute bottom-0 left-0 right-0 max-w-md bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl p-6">
                 <div className="text-white text-xl font-bold">{t('brand.founderName')}</div>
-                <p className="text-[#c9a84c] text-sm font-semibold uppercase">{t('brand.founderTitle')}</p>
+                <p className="text-[#f4c542] text-sm font-semibold uppercase">{t('brand.founderTitle')}</p>
                 <p className="text-gray-300 text-xs">{t('brand.founderRole')}</p>
               </div>
             </div>
             <div>
-              <div className="inline-flex items-center gap-2 text-[#7a5c12] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#8a5a00] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Star size={14} />
                 {t('home.leadership')}
               </div>
-              <h2 className="text-4xl font-bold text-[#1a3a2a] mb-6">{t('home.founderHeading')}</h2>
-              <blockquote className="text-gray-600 text-lg italic border-l-4 border-[#c9a84c] pl-4 mb-6">
+              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.founderHeading')}</h2>
+              <blockquote className="text-gray-600 text-lg italic border-l-4 border-[#f4c542] pl-4 mb-6">
                 {t('home.founderQuote')}
               </blockquote>
-              <Link to="/about" className="inline-flex items-center gap-2 text-[#7a5c12] font-semibold hover:underline">
+              <Link to="/about" className="inline-flex items-center gap-2 text-[#8a5a00] font-semibold hover:underline">
                 {t('common.readOurStory')} <ChevronRight size={16} className="rtl:rotate-180" />
               </Link>
             </div>
@@ -153,20 +153,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="inline-flex items-center gap-2 text-[#7a5c12] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#8a5a00] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Award size={14} />
                 {t('home.whyChooseUs')}
               </div>
-              <h2 className="text-4xl font-bold text-[#1a3a2a] mb-6">{t('home.unmatchedStandards')}</h2>
+              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.unmatchedStandards')}</h2>
               <p className="text-gray-600 mb-8">{t('home.differenceText')}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (
                   <div key={item.key} className="flex items-start gap-3">
-                    <div className="bg-[#1a3a2a] p-2 rounded-lg shrink-0">
-                      <item.icon size={20} className="text-[#c9a84c]" />
+                    <div className="bg-[#047857] p-2 rounded-lg shrink-0">
+                      <item.icon size={20} className="text-[#f4c542]" />
                     </div>
                     <div>
-                      <div className="font-bold text-[#1a3a2a] text-sm">{t(`home.why.${item.key}.title`)}</div>
+                      <div className="font-bold text-[#047857] text-sm">{t(`home.why.${item.key}.title`)}</div>
                       <p className="text-gray-500 text-sm">{t(`home.why.${item.key}.desc`)}</p>
                     </div>
                   </div>
@@ -182,10 +182,10 @@ export default function Home() {
                 loading="lazy"
                 decoding="async"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/1a3a2a/c9a84c/png?text=Medical+Excellence' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/047857/f4c542/png?text=Medical+Excellence' }}
               />
               <div className="absolute bottom-4 left-4 bg-white rounded-xl p-4 shadow-lg">
-                <div className="text-sm font-bold text-[#1a3a2a]">{t('home.qualifiedDoctors')}</div>
+                <div className="text-sm font-bold text-[#047857]">{t('home.qualifiedDoctors')}</div>
                 <div className="text-xs text-gray-500">{t('home.qualifiedDoctorsDesc')}</div>
               </div>
             </div>
@@ -194,9 +194,9 @@ export default function Home() {
       </section>
 
       {/* Legacy Stats */}
-      <section className="py-20 bg-[#1a3a2a] text-white">
+      <section className="py-20 bg-[#047857] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-[#c9a84c] text-xs font-semibold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 text-[#f4c542] text-xs font-semibold tracking-widest uppercase mb-4">
             <Clock size={14} />
             {t('home.ourLegacy')}
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             {stats.map((stat) => (
               <div key={stat.labelKey}>
-                <h3 className="text-4xl font-bold text-[#c9a84c]">{stat.value}</h3>
+                <h3 className="text-4xl font-bold text-[#f4c542]">{stat.value}</h3>
                 <p className="text-gray-300 text-sm mt-1">{t(stat.labelKey)}</p>
               </div>
             ))}
@@ -228,41 +228,41 @@ export default function Home() {
                 loading="lazy"
                 decoding="async"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/1a3a2a/c9a84c/png?text=Beyond+Borders' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/047857/f4c542/png?text=Beyond+Borders' }}
               />
               <div className="absolute bottom-4 left-4 bg-white rounded-xl p-4 shadow-lg">
-                <div className="text-xs text-[#7a5c12] font-semibold uppercase">{t('home.ourHeritage')}</div>
+                <div className="text-xs text-[#8a5a00] font-semibold uppercase">{t('home.ourHeritage')}</div>
                 <div className="text-sm text-gray-600">{t('home.heritageDesc')}</div>
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-[#1a3a2a] mb-6">{t('home.beyondBorders')}</h2>
+              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.beyondBorders')}</h2>
               <p className="text-gray-600 mb-6">
                 {t('home.beyondBordersText')}
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <Star size={20} className="text-[#c9a84c] mt-1 shrink-0" />
+                  <Star size={20} className="text-[#f4c542] mt-1 shrink-0" />
                   <div>
-                    <div className="font-bold text-[#1a3a2a]">{t('home.ourVision')}</div>
+                    <div className="font-bold text-[#047857]">{t('home.ourVision')}</div>
                     <p className="text-gray-500 text-sm">{t('home.visionDesc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Heart size={20} className="text-[#c9a84c] mt-1 shrink-0" />
+                  <Heart size={20} className="text-[#f4c542] mt-1 shrink-0" />
                   <div>
-                    <div className="font-bold text-[#1a3a2a]">{t('home.ourMission')}</div>
+                    <div className="font-bold text-[#047857]">{t('home.ourMission')}</div>
                     <p className="text-gray-500 text-sm">{t('home.missionDesc')}</p>
                   </div>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 items-center">
-                <Link to="/services" className="bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#2a5a3a] transition-colors">
+                <Link to="/services" className="bg-[#047857] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#059669] transition-colors">
                   {t('home.explore')}
                 </Link>
-                <a href="tel:+918892536694" dir="ltr" className="flex items-center gap-2 text-gray-600 text-sm hover:text-[#c9a84c] transition-colors">
-                  <Phone size={14} className="text-[#c9a84c]" />
-                  +91 8892536694
+                <a href="tel:+919986879931" dir="ltr" className="flex items-center gap-2 text-gray-600 text-sm hover:text-[#f4c542] transition-colors">
+                  <Phone size={14} className="text-[#f4c542]" />
+                  +91 9986879931
                 </a>
               </div>
             </div>
@@ -271,10 +271,10 @@ export default function Home() {
       </section>
 
       {/* Partners */}
-      <section className="py-20 bg-[#1a3a2a] text-white">
+      <section className="py-20 bg-[#047857] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 text-[#c9a84c] text-xs font-semibold tracking-widest uppercase mb-4">
+            <div className="inline-flex items-center gap-2 text-[#f4c542] text-xs font-semibold tracking-widest uppercase mb-4">
               <Award size={14} />
               {t('home.eliteNetwork')}
             </div>
@@ -286,7 +286,7 @@ export default function Home() {
 
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
-              <Stethoscope size={20} className="text-[#c9a84c]" />
+              <Stethoscope size={20} className="text-[#f4c542]" />
               <div>
                 <h3 className="font-bold">{t('home.medicalExcellence')}</h3>
                 <p className="text-gray-400 text-sm">{t('home.eliteHospitalNetwork')}</p>
@@ -294,12 +294,19 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
               {medicalPartners.map((p) => (
-                <Link key={p.name} to={p.path} className="bg-white/10 backdrop-blur rounded-xl p-4 text-center hover:bg-white/20 transition-colors">
-                  <div className="w-16 h-16 bg-white rounded-lg mx-auto mb-3 flex items-center justify-center">
-                    <span className="text-[#1a3a2a] font-bold text-xs">{p.name.split(' ')[0]}</span>
+                <Link key={p.name} to={p.path} className="bg-white/10 backdrop-blur rounded-xl p-3 sm:p-4 text-center hover:bg-white/20 transition-colors min-h-[7.5rem] flex flex-col items-center">
+                  <div className="w-16 h-16 bg-white rounded-lg mx-auto mb-3 flex items-center justify-center px-1 shrink-0">
+                    <img
+                      src={p.logo}
+                      alt={`${p.name} logo`}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-12 w-12 object-contain"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
+                    />
                   </div>
-                  <div className="font-semibold text-sm">{p.name}</div>
-                  <div className="text-[#e4c76a] text-xs">{t(p.tagKey)}</div>
+                  <div className="font-semibold text-xs sm:text-sm leading-tight min-h-[2rem] flex items-center justify-center px-1 [overflow-wrap:anywhere]">{p.name}</div>
+                  <div className="text-[#fde68a] text-[11px] sm:text-xs leading-tight mt-1 px-1 [overflow-wrap:anywhere]">{t(p.tagKey)}</div>
                 </Link>
               ))}
             </div>
@@ -307,7 +314,7 @@ export default function Home() {
 
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <Hotel size={20} className="text-[#c9a84c]" />
+              <Hotel size={20} className="text-[#f4c542]" />
               <div>
                 <h3 className="font-bold">{t('home.luxuryHospitality')}</h3>
                 <p className="text-gray-400 text-sm">{t('home.premiumRecoveryStays')}</p>
@@ -315,12 +322,19 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
               {hotelPartners.map((p) => (
-                <Link key={p.name} to={p.path} className="bg-white/10 backdrop-blur rounded-xl p-4 text-center hover:bg-white/20 transition-colors">
-                  <div className="w-14 h-14 bg-white rounded-lg mx-auto mb-3 flex items-center justify-center">
-                    <span className="text-[#1a3a2a] font-bold text-xs text-center leading-tight">{p.name.split(' ').slice(0, 2).join(' ')}</span>
+                <Link key={p.name} to={p.path} className="bg-white/10 backdrop-blur rounded-xl p-3 sm:p-4 text-center hover:bg-white/20 transition-colors min-h-[7.5rem] flex flex-col items-center">
+                  <div className="w-16 h-16 bg-white rounded-lg mx-auto mb-3 flex items-center justify-center px-1 shrink-0">
+                    <img
+                      src={p.logo}
+                      alt={`${p.name} logo`}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-12 w-12 object-contain"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
+                    />
                   </div>
-                  <div className="font-semibold text-xs">{p.name}</div>
-                  <div className="text-[#e4c76a] text-xs">{t(p.tagKey)}</div>
+                  <div className="font-semibold text-xs leading-tight min-h-[2rem] flex items-center justify-center px-1 [overflow-wrap:anywhere]">{p.name}</div>
+                  <div className="text-[#fde68a] text-[11px] sm:text-xs leading-tight mt-1 px-1 [overflow-wrap:anywhere]">{t(p.tagKey)}</div>
                 </Link>
               ))}
             </div>
@@ -333,16 +347,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="inline-flex items-center gap-2 text-[#7a5c12] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#8a5a00] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Shield size={14} />
                 {t('home.officialGuarantee')}
               </div>
-              <h2 className="text-4xl font-bold text-[#1a3a2a] mb-6">{t('home.bestPriceMatched')}</h2>
+              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.bestPriceMatched')}</h2>
               <p className="text-gray-600 mb-6">
                 {t('home.priceMatchDesc')}
               </p>
               <div className="flex items-center gap-4">
-                <Link to="/contact" className="bg-[#c9a84c] text-[#1a3a2a] px-6 py-3 rounded font-bold text-sm inline-flex items-center gap-2 hover:bg-[#b8963e] transition-colors">
+                <Link to="/contact" className="bg-[#f4c542] text-[#064e3b] px-6 py-3 rounded font-bold text-sm inline-flex items-center gap-2 hover:bg-[#d9a520] transition-colors">
                   {t('common.uploadQuote')} <ChevronRight size={16} className="rtl:rotate-180" />
                 </Link>
                 <span className="text-sm text-gray-500">{t('home.response24h')}</span>
@@ -351,9 +365,9 @@ export default function Home() {
             <div className="space-y-4">
               {priceMatchSteps.map((step) => (
                 <div key={step.num} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex gap-4">
-                  <div className="text-3xl font-bold text-[#7a5c12]">{step.num}</div>
+                  <div className="text-3xl font-bold text-[#8a5a00]">{step.num}</div>
                   <div>
-                    <div className="font-bold text-[#1a3a2a]">{t(`home.priceSteps.${step.key}.title`)}</div>
+                    <div className="font-bold text-[#047857]">{t(`home.priceSteps.${step.key}.title`)}</div>
                     <p className="text-gray-500 text-sm">{t(`home.priceSteps.${step.key}.desc`)}</p>
                   </div>
                 </div>
@@ -367,7 +381,7 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#1a3a2a] mb-4">{t('home.ourServices')}</h2>
+            <h2 className="text-4xl font-bold text-[#047857] mb-4">{t('home.ourServices')}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               {t('home.servicesDesc')}
             </p>
@@ -375,10 +389,10 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
               <Link key={s.key} to={s.path} className="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-shadow group">
-                <div className="bg-[#1a3a2a] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <s.icon size={24} className="text-[#c9a84c]" />
+                <div className="bg-[#047857] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <s.icon size={24} className="text-[#f4c542]" />
                 </div>
-                <h3 className="font-bold text-[#1a3a2a] mb-2 group-hover:text-[#c9a84c] transition-colors">{t(`home.services.${s.key}.title`)}</h3>
+                <h3 className="font-bold text-[#047857] mb-2 group-hover:text-[#f4c542] transition-colors">{t(`home.services.${s.key}.title`)}</h3>
                 <p className="text-gray-500 text-sm">{t(`home.services.${s.key}.desc`)}</p>
               </Link>
             ))}
@@ -390,7 +404,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#1a3a2a] mb-4">{t('home.medicalTreatments')}</h2>
+            <h2 className="text-4xl font-bold text-[#047857] mb-4">{t('home.medicalTreatments')}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               {t('home.treatmentsDesc')}
             </p>
@@ -407,12 +421,12 @@ export default function Home() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/400x300/1a3a2a/c9a84c/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/400x300/047857/f4c542/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-bold text-[#1a3a2a] group-hover:text-[#c9a84c] transition-colors">{t(`treatments.items.${treatment.key}.title`)}</h3>
-                  <span className="text-[#7a5c12] text-sm inline-flex items-center gap-1 mt-1">
+                  <h3 className="font-bold text-[#047857] group-hover:text-[#f4c542] transition-colors">{t(`treatments.items.${treatment.key}.title`)}</h3>
+                  <span className="text-[#8a5a00] text-sm inline-flex items-center gap-1 mt-1">
                     {t('common.inquireNow')} <ChevronRight size={14} className="rtl:rotate-180" />
                   </span>
                 </div>
@@ -420,7 +434,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link to="/treatments" className="inline-flex items-center gap-2 bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#2a5a3a] transition-colors">
+            <Link to="/treatments" className="inline-flex items-center gap-2 bg-[#047857] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#059669] transition-colors">
               {t('common.viewAllTreatments')} <ChevronRight size={16} className="rtl:rotate-180" />
             </Link>
           </div>

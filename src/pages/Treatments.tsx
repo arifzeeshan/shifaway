@@ -89,14 +89,14 @@ export default function Treatments() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#1a3a2a] text-white py-20">
+      <section className="bg-[#047857] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 rounded-full px-4 py-1.5 mb-6">
-            <Award size={14} className="text-[#c9a84c]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#c9a84c]">{t('treatments.badge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-6">
+            <Award size={14} className="text-[#f4c542]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('treatments.badge')}</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            {t('treatments.titleStart')} <span className="italic text-[#c9a84c]">{t('treatments.titleHighlight')}</span>
+            {t('treatments.titleStart')} <span className="italic text-[#f4c542]">{t('treatments.titleHighlight')}</span>
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
             {t('treatments.subtitle')}
@@ -115,16 +115,16 @@ export default function Treatments() {
                     src={treatment.img}
                     alt={t(`treatments.items.${treatment.key}.title`)}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/1a3a2a/c9a84c/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/047857/f4c542/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
                   />
                 </div>
                 <div className="p-6">
-                  <div className="bg-[#1a3a2a]/5 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-                    <treatment.icon size={20} className="text-[#1a3a2a]" />
+                  <div className="bg-[#047857]/5 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+                    <treatment.icon size={20} className="text-[#047857]" />
                   </div>
-                  <h3 className="font-bold text-lg text-[#1a3a2a] group-hover:text-[#c9a84c] transition-colors mb-2">{t(`treatments.items.${treatment.key}.title`)}</h3>
+                  <h3 className="font-bold text-lg text-[#047857] group-hover:text-[#f4c542] transition-colors mb-2">{t(`treatments.items.${treatment.key}.title`)}</h3>
                   <p className="text-gray-500 text-sm mb-4">{t(`treatments.items.${treatment.key}.desc`)}</p>
-                  <span className="text-[#c9a84c] font-semibold text-sm inline-flex items-center gap-1">
+                  <span className="text-[#f4c542] font-semibold text-sm inline-flex items-center gap-1">
                     {t('common.inquireNow')} <ChevronRight size={14} className="rtl:rotate-180" />
                   </span>
                 </div>

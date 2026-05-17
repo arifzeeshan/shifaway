@@ -26,10 +26,10 @@ type WindowWithIdleCallback = Window &
 
 function PageFallback() {
   return (
-    <div className="flex min-h-[60vh] items-center justify-center bg-[#fdfcf7] px-4 text-center text-[#1a3a2a]">
+    <div className="flex min-h-[60vh] items-center justify-center bg-[#fdfcf7] px-4 text-center text-[#047857]">
       <div>
-        <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-[#c9a84c]/30 border-t-[#c9a84c]" />
-        <p className="text-xs font-bold uppercase tracking-widest text-[#c9a84c]">Loading</p>
+        <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-[#f4c542]/30 border-t-[#f4c542]" />
+        <p className="text-xs font-bold uppercase tracking-widest text-[#f4c542]">Loading</p>
       </div>
     </div>
   )
@@ -69,7 +69,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white">
+      <div className="min-h-screen flex flex-col bg-white pb-20 lg:pb-0">
         <Navbar />
         <main className="flex-1">
           <Suspense fallback={<PageFallback />}>

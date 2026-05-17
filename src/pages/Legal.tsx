@@ -50,7 +50,7 @@ const policies = {
       },
       {
         title: '10. Contact Us',
-        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 8892536694, Bengaluru, Karnataka, India - 5600005.',
+        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at abudanish@shifaway.com, +91 99868 79931 / +91 8892536694, Bengaluru, Karnataka, India - 5600005.',
       },
     ],
   },
@@ -106,7 +106,7 @@ const policies = {
       },
       {
         title: '12. Contact Us',
-        body: 'For questions about these Terms, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 8892536694, Bengaluru, Karnataka, India - 5600005.',
+        body: 'For questions about these Terms, contact Shifaway at abudanish@shifaway.com, +91 99868 79931 / +91 8892536694, Bengaluru, Karnataka, India - 5600005.',
       },
     ],
   },
@@ -117,11 +117,11 @@ function renderBody(body: string) {
 
   return parts.map((part) => {
     if (part === '+91 99868 79931') {
-      return <a key={part} href="tel:+919986879931" dir="ltr" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
+      return <a key={part} href="tel:+919986879931" dir="ltr" className="font-medium text-[#047857] transition-colors hover:text-[#f4c542]">{part}</a>
     }
 
     if (part === '+91 8892536694') {
-      return <a key={part} href="tel:+918892536694" dir="ltr" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
+      return <a key={part} href="tel:+918892536694" dir="ltr" className="font-medium text-[#047857] transition-colors hover:text-[#f4c542]">{part}</a>
     }
 
     return part
@@ -132,19 +132,19 @@ export default function Legal({ type }: LegalPageProps) {
   const page = policies[type]
 
   return (
-    <div className="bg-[#fdfcf7] text-[#1a3a2a]">
-      <section className="bg-[#1a3a2a] px-4 py-20 text-white sm:px-6 lg:px-8">
+    <div className="bg-[#fdfcf7] text-[#047857]">
+      <section className="bg-[#047857] px-4 py-20 text-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <Link to="/" className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#c9a84c]">
+          <Link to="/" className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#f4c542]">
             <ArrowLeft size={16} className="rtl:rotate-180" />
             Back to Home
           </Link>
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#c9a84c]/40 bg-[#c9a84c]/20 px-4 py-1.5">
-            <FileText size={14} className="text-[#c9a84c]" />
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#c9a84c]">{page.badge}</span>
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#f4c542]/40 bg-[#f4c542]/20 px-4 py-1.5">
+            <FileText size={14} className="text-[#f4c542]" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#f4c542]">{page.badge}</span>
           </div>
           <h1 className="mb-4 text-5xl font-bold md:text-6xl">
-            {page.titleStart} <span className="italic text-[#c9a84c]">{page.titleHighlight}</span>
+            {page.titleStart} <span className="italic text-[#f4c542]">{page.titleHighlight}</span>
           </h1>
           <p className="text-white/70">{page.updated}</p>
         </div>
