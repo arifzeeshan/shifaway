@@ -1,12 +1,12 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import en from './locales/en.json'
 
 type SupportedLanguage = 'en' | 'ar'
 
 const localeLoaders = {
-  en: () => import('./locales/en.json'),
   ar: () => import('./locales/ar.json'),
-} satisfies Record<SupportedLanguage, () => Promise<{ default: Record<string, unknown> }>>
+} satisfies Record<Exclude<SupportedLanguage, 'en'>, () => Promise<{ default: Record<string, unknown> }>>
 
 function normalizeLanguage(language?: string | null): SupportedLanguage {
   return language?.toLowerCase().startsWith('ar') ? 'ar' : 'en'
@@ -27,6 +27,10 @@ function detectInitialLanguage(): SupportedLanguage {
 }
 
 async function loadTranslation(language: SupportedLanguage) {
+  if (language === 'en') {
+    return en
+  }
+
   const module = await localeLoaders[language]()
   return module.default
 }
@@ -51,14 +55,13 @@ export async function changeLanguage(language: string) {
   return i18n.changeLanguage(resolvedLanguage)
 }
 
-const initialLanguage = detectInitialLanguage()
+export const initialLanguage = detectInitialLanguage()
 
-export const i18nReady = loadTranslation(initialLanguage).then((translation) =>
-  i18n
+i18n
   .use(initReactI18next)
   .init({
     resources: {
-      [initialLanguage]: { translation },
+      en: { translation: en },
     },
     lng: initialLanguage,
     fallbackLng: 'en',
@@ -66,7 +69,8 @@ export const i18nReady = loadTranslation(initialLanguage).then((translation) =>
     interpolation: {
       escapeValue: false,
     },
-  }),
-)
+  })
+
+export const i18nReady = initialLanguage === 'ar' ? loadLanguage(initialLanguage) : Promise.resolve(initialLanguage)
 
 export default i18n

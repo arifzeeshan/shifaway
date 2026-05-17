@@ -4,9 +4,9 @@ import './App.css'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import { useDirection } from './i18n/useDirection'
+import Home from './pages/Home'
 
 const Footer = lazy(() => import('./components/Footer'))
-const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
 const Services = lazy(() => import('./pages/Services'))
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))

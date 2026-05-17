@@ -49,16 +49,16 @@ export default function Footer() {
               {t('footer.tagline')}
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/kmawellnesstourism" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.instagram.com/kmawellnesstourism" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on Instagram" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on X" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on LinkedIn" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="KMA Wellness Tourism on Facebook" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Facebook size={18} />
               </a>
             </div>
@@ -78,7 +78,7 @@ export default function Footer() {
                 placeholder={t('footer.emailPlaceholder')}
                 className="flex-1 bg-[#1a3a2a] border border-gray-600 rounded px-4 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-[#c9a84c]"
               />
-              <button className="bg-[#c9a84c] text-[#1a3a2a] px-6 py-2 rounded font-semibold text-sm hover:bg-[#b8963e] transition-colors">
+              <button type="submit" className="bg-[#c9a84c] text-[#1a3a2a] px-6 py-2 rounded font-semibold text-sm hover:bg-[#b8963e] transition-colors">
                 {t('footer.subscribe')}
               </button>
             </form>

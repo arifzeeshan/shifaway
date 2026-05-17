@@ -60,6 +60,9 @@ export default function Navbar() {
 
           <button
             className="lg:hidden text-white"
+            type="button"
+            aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={open}
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={24} /> : <Menu size={24} />}
