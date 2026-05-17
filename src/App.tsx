@@ -69,9 +69,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white pb-20 lg:pb-0">
+      <div className="min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-white pb-20 lg:pb-0">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 w-full max-w-full overflow-x-hidden">
           <Suspense fallback={<PageFallback />}>
             <Routes>
               <Route path="/" element={<Home />} />
