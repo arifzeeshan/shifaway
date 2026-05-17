@@ -147,8 +147,8 @@ export default function Footer() {
                 <Phone size={16} className="text-[#c9a84c] mt-0.5 shrink-0" />
                 <div>
                   <div className="text-sm font-semibold">{t('footer.directLines')}</div>
-                  <p className="text-gray-300 text-sm">+91 99868 79931</p>
-                  <p className="text-gray-300 text-sm">+91 88925366694</p>
+                  <a href="tel:+919986879931" className="block text-gray-300 text-sm hover:text-[#c9a84c] transition-colors">+91 99868 79931</a>
+                  <a href="tel:+9188925366694" className="block text-gray-300 text-sm hover:text-[#c9a84c] transition-colors">+91 88925366694</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">

@@ -112,6 +112,22 @@ const policies = {
   },
 }
 
+function renderBody(body: string) {
+  const parts = body.split(/(\+91 99868 79931|\+91 88925366694)/g)
+
+  return parts.map((part) => {
+    if (part === '+91 99868 79931') {
+      return <a key={part} href="tel:+919986879931" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
+    }
+
+    if (part === '+91 88925366694') {
+      return <a key={part} href="tel:+9188925366694" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
+    }
+
+    return part
+  })
+}
+
 export default function Legal({ type }: LegalPageProps) {
   const page = policies[type]
 
@@ -140,7 +156,7 @@ export default function Legal({ type }: LegalPageProps) {
             {page.sections.map((section) => (
               <section key={section.title}>
                 <h2 className="mb-3 text-xl font-bold">{section.title}</h2>
-                <p className="leading-relaxed text-gray-600">{section.body}</p>
+                <p className="leading-relaxed text-gray-600">{renderBody(section.body)}</p>
               </section>
             ))}
           </div>

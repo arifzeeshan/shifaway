@@ -260,10 +260,10 @@ export default function Home() {
                 <Link to="/services" className="bg-[#1a3a2a] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#2a5a3a] transition-colors">
                   {t('home.explore')}
                 </Link>
-                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                <a href="tel:+9188925366694" className="flex items-center gap-2 text-gray-600 text-sm hover:text-[#c9a84c] transition-colors">
                   <Phone size={14} className="text-[#c9a84c]" />
                   +91 88925366694
-                </div>
+                </a>
               </div>
             </div>
           </div>
