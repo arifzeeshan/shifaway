@@ -62,8 +62,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#1a3a2a] text-sm uppercase tracking-wider">{t('contact.directLines')}</h3>
-                    <a href="tel:+919986879931" className="block text-gray-600 hover:text-[#c9a84c] transition-colors">+91 99868 79931</a>
-                    <a href="tel:+9188925366694" className="block text-gray-600 hover:text-[#c9a84c] transition-colors">+91 88925366694</a>
+                    <a href="tel:+919986879931" dir="ltr" className="block text-gray-600 hover:text-[#c9a84c] transition-colors">+91 99868 79931</a>
+                    <a href="tel:+918892536694" dir="ltr" className="block text-gray-600 hover:text-[#c9a84c] transition-colors">+91 8892536694</a>
                   </div>
                 </div>
 

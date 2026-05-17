@@ -50,7 +50,7 @@ const policies = {
       },
       {
         title: '10. Contact Us',
-        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 88925366694, Bengaluru, Karnataka, India - 5600005.',
+        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 8892536694, Bengaluru, Karnataka, India - 5600005.',
       },
     ],
   },
@@ -106,22 +106,22 @@ const policies = {
       },
       {
         title: '12. Contact Us',
-        body: 'For questions about these Terms, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 88925366694, Bengaluru, Karnataka, India - 5600005.',
+        body: 'For questions about these Terms, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 8892536694, Bengaluru, Karnataka, India - 5600005.',
       },
     ],
   },
 }
 
 function renderBody(body: string) {
-  const parts = body.split(/(\+91 99868 79931|\+91 88925366694)/g)
+  const parts = body.split(/(\+91 99868 79931|\+91 8892536694)/g)
 
   return parts.map((part) => {
     if (part === '+91 99868 79931') {
-      return <a key={part} href="tel:+919986879931" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
+      return <a key={part} href="tel:+919986879931" dir="ltr" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
     }
 
-    if (part === '+91 88925366694') {
-      return <a key={part} href="tel:+9188925366694" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
+    if (part === '+91 8892536694') {
+      return <a key={part} href="tel:+918892536694" dir="ltr" className="font-medium text-[#1a3a2a] transition-colors hover:text-[#c9a84c]">{part}</a>
     }
 
     return part
