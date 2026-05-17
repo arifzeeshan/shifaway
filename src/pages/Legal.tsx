@@ -50,7 +50,7 @@ const policies = {
       },
       {
         title: '10. Contact Us',
-        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at info@shifaway.com, +91 98457 77777 / +91 99007 77777, Bengaluru, Karnataka, India - 560084.',
+        body: 'For questions about this Privacy Policy or your data rights, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 88925366694, Bengaluru, Karnataka, India - 5600005.',
       },
     ],
   },
@@ -106,7 +106,7 @@ const policies = {
       },
       {
         title: '12. Contact Us',
-        body: 'For questions about these Terms, contact Shifaway at info@shifaway.com, +91 98457 77777 / +91 99007 77777, Bengaluru, Karnataka, India - 560084.',
+        body: 'For questions about these Terms, contact Shifaway at info@shifaway.com, +91 99868 79931 / +91 88925366694, Bengaluru, Karnataka, India - 5600005.',
       },
     ],
   },

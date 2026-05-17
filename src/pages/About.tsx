@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart, Eye, Users, Star, ChevronRight, ArrowLeft, Clock, Building } from 'lucide-react'
+import { Heart, Eye, Users, Star, ChevronRight, Clock, Building } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 const stats = [
@@ -19,9 +19,6 @@ export default function About() {
       {/* Hero */}
       <section className="bg-[#1a3a2a] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="inline-flex items-center gap-2 text-gray-300 hover:text-[#c9a84c] text-sm mb-8">
-            <ArrowLeft size={16} className="rtl:rotate-180" /> {t('common.backToHome')}
-          </Link>
           <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 rounded-full px-4 py-1.5 mb-6">
             <Star size={14} className="text-[#c9a84c]" />
             <span className="text-xs font-semibold tracking-widest uppercase text-[#c9a84c]">{t('about.story')}</span>
@@ -38,23 +35,23 @@ export default function About() {
       {/* Founder */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="relative mx-auto w-full max-w-sm sm:max-w-md overflow-hidden rounded-2xl shadow-xl aspect-[4/5] bg-[#1a3a2a]">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop"
+                src="https://api.dicebear.com/9.x/initials/svg?seed=Abu%20Danish&backgroundColor=1a3a2a&fontWeight=700&fontSize=40"
                 alt="Shifaway"
-                className="rounded-2xl shadow-xl w-full max-w-md object-cover"
+                className="h-full w-full object-cover"
                 onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/1a3a2a/c9a84c/png?text=Founder' }}
               />
-              <div className="absolute bottom-0 left-0 right-0 max-w-md bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl p-6">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 sm:p-6 pt-16">
                 <h3 className="text-white text-xl font-bold">{t('brand.founderName')}</h3>
                 <p className="text-[#c9a84c] text-sm font-semibold uppercase">{t('brand.founderTitle')}</p>
                 <p className="text-gray-300 text-xs">{t('brand.founderRole')}</p>
               </div>
             </div>
-            <div>
-              <h2 className="text-4xl font-bold text-[#1a3a2a] mb-2">{t('about.visionOf')}</h2>
-              <h2 className="text-4xl font-bold italic text-[#c9a84c] mb-6">{t('about.compassionateCare')}</h2>
+            <div className="max-w-xl mx-auto lg:mx-0">
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1a3a2a] mb-2">{t('about.visionOf')}</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold italic text-[#c9a84c] mb-6">{t('about.compassionateCare')}</h2>
               <p className="text-gray-600 mb-6">
                 {t('about.founderText')}
               </p>

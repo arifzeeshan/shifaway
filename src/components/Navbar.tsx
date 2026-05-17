@@ -24,9 +24,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center">
-              <div className="bg-[#c9a84c] text-[#1a3a2a] font-bold text-lg px-2 py-1 rounded">
-                Shifaway
-              </div>
+              <img src="/images/shifaway.png" alt="Shifaway" width={40} height={40} className="h-10 w-10 rounded bg-white object-contain p-1" />
               <div className="ml-2 hidden sm:block">
                 <div className="text-xs font-semibold tracking-wider uppercase">{t('brand.founderName')}</div>
                 <div className="text-[10px] tracking-widest uppercase text-gray-300">{t('brand.wellnessTourism')}</div>

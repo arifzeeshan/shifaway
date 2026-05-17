@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Twitter, Linkedin, Facebook, MapPin, Phone, Mail, Globe, Send } from 'lucide-react'
+import { Instagram, Twitter, Linkedin, Facebook, Ghost, MapPin, Phone, Mail, Globe, Send } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 const navigationLinks = [
@@ -38,9 +38,7 @@ export default function Footer() {
               <span>{t('footer.established')}</span>
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-[#c9a84c] text-[#1a3a2a] font-bold text-xl px-3 py-1 rounded">
-                K<span className="italic">M</span>A
-              </div>
+              <img src="/images/shifaway.png" alt="Shifaway" width={44} height={44} className="h-11 w-11 rounded bg-white object-contain p-1" />
               <div className="ml-1">
                 <div className="text-sm font-semibold tracking-wider uppercase">{t('footer.wellnessTourism')}</div>
               </div>
@@ -49,7 +47,7 @@ export default function Footer() {
               {t('footer.tagline')}
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/shifaway" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Instagram" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.instagram.com/shifaway.blr" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Instagram" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Instagram size={18} />
               </a>
               <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on X" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
@@ -58,8 +56,11 @@ export default function Footer() {
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on LinkedIn" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Facebook" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+              <a href="https://www.facebook.com/Shafiway.Blr" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Facebook" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
                 <Facebook size={18} />
+              </a>
+              <a href="https://snapchat.com/t/lTmWj5CR" target="_blank" rel="noopener noreferrer" aria-label="Shifaway on Snapchat" className="w-10 h-10 rounded-full border border-gray-500 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] transition-colors">
+                <Ghost size={18} />
               </a>
             </div>
           </div>
@@ -146,8 +147,8 @@ export default function Footer() {
                 <Phone size={16} className="text-[#c9a84c] mt-0.5 shrink-0" />
                 <div>
                   <div className="text-sm font-semibold">{t('footer.directLines')}</div>
-                  <p className="text-gray-300 text-sm">+91 98457 77777</p>
-                  <p className="text-gray-300 text-sm">+91 99007 77777</p>
+                  <p className="text-gray-300 text-sm">+91 99868 79931</p>
+                  <p className="text-gray-300 text-sm">+91 88925366694</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

@@ -27,9 +27,9 @@
     "viewAllTreatments": "عرض جميع العلاجات"
   },
   "brand": {
-    "founderName": "Shifaway",
-    "founderTitle": "منصة للسياحة العلاجية",
-    "founderRole": "دعم شخصي للسفر العلاجي والتعافي",
+    "founderName": "أبو دانيش",
+    "founderTitle": "المؤسس والرئيس التنفيذي",
+    "founderRole": "ميسّر للسياحة العلاجية ورعاية المرضى",
     "wellnessTourism": "السياحة العلاجية"
   },
   "home": {
@@ -42,7 +42,7 @@
     "jciAccredited": "معتمد من JCI",
     "jciDesc": "شراكات مع أكثر المراكز الطبية تطوراً في الهند.",
     "leadership": "منصتنا",
-    "founderHeading": "منصة الرعاية وراء Shifaway",
+    "founderHeading": "الشخصية وراء Shifaway",
     "founderQuote": "\"نحن لسنا مجرد مسهّلين؛ نحن عائلتكم في أرض غريبة. مهمتنا أن يعود كل مريض يسافر إلى الهند ليس متعافياً فحسب، بل متأثراً بالدفء والرعاية التي تلقاها.\"",
     "whyChooseUs": "لماذا تختارنا",
     "unmatchedStandards": "معايير لا تضاهى.",
@@ -209,7 +209,7 @@
     "treatments": "العلاجات",
     "reachUs": "تواصل معنا",
     "headquarters": "المقر الرئيسي",
-    "address": "بنغالورو، كارناتاكا، الهند - 560084",
+    "address": "بنغالورو، كارناتاكا، الهند - 5600005",
     "globalSupport": "دعم عالمي",
     "supportText": "كونسيرج متاح 24/7",
     "directLines": "الأرقام المباشرة",
@@ -244,7 +244,7 @@
     "responseTime": "وقت الاستجابة: خلال ساعتين",
     "headquarters": "المقر الرئيسي",
     "city": "بنغالورو، كارناتاكا",
-    "countryPostal": "الهند - 560084",
+    "countryPostal": "الهند - 5600005",
     "connectWithUs": "تابعنا",
     "formTitleStart": "ابدأ",
     "formTitleHighlight": "رحلتك",

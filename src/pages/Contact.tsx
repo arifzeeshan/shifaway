@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Award, Phone, Mail, MapPin, Instagram, Twitter, Linkedin, Facebook, Send } from 'lucide-react'
+import { Award, Phone, Mail, MapPin, Instagram, Twitter, Linkedin, Facebook, Ghost, Send } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export default function Contact() {
@@ -10,7 +10,18 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    alert(t('contact.alertSuccess'))
+
+    const message = [
+      'New Shifaway enquiry',
+      `Name: ${formData.fullName}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone}`,
+      `Country: ${formData.country}`,
+      `Treatment Type: ${formData.treatmentType}`,
+      `Message: ${formData.message}`,
+    ].join('\n')
+
+    window.open(`https://wa.me/919986879931?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -51,8 +62,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#1a3a2a] text-sm uppercase tracking-wider">{t('contact.directLines')}</h3>
-                    <p className="text-gray-600">+91 98457 77777</p>
-                    <p className="text-gray-600">+91 99007 77777</p>
+                    <p className="text-gray-600">+91 99868 79931</p>
+                    <p className="text-gray-600">+91 88925366694</p>
                   </div>
                 </div>
 
@@ -82,7 +93,7 @@ export default function Contact() {
               <div className="mb-8">
                 <h3 className="font-semibold text-[#1a3a2a] text-sm uppercase tracking-wider mb-3">{t('contact.connectWithUs')}</h3>
                 <div className="flex gap-3">
-                  <a href="https://www.instagram.com/shifaway" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="https://www.instagram.com/shifaway.blr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
                     <Instagram size={18} />
                   </a>
                   <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
@@ -91,8 +102,11 @@ export default function Contact() {
                   <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
                     <Linkedin size={18} />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                  <a href="https://www.facebook.com/Shafiway.Blr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
                     <Facebook size={18} />
+                  </a>
+                  <a href="https://snapchat.com/t/lTmWj5CR" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#c9a84c] hover:text-[#c9a84c] text-gray-500 transition-colors">
+                    <Ghost size={18} />
                   </a>
                 </div>
               </div>
@@ -214,12 +228,12 @@ export default function Contact() {
           {t('contact.instagramText')}
         </p>
         <a
-          href="https://www.instagram.com/shifaway"
+          href="https://www.instagram.com/shifaway.blr"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-[#c9a84c] font-semibold hover:underline"
         >
-          <Instagram size={16} /> @shifaway
+          <Instagram size={16} /> @shifaway.blr
         </a>
       </section>
     </div>

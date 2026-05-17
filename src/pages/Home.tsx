@@ -116,7 +116,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=420&h=490&fit=crop&auto=format&q=45"
+                src="https://api.dicebear.com/9.x/initials/svg?seed=Abu%20Danish&backgroundColor=1a3a2a&fontWeight=700&fontSize=40"
                 alt="Shifaway"
                 width={420}
                 height={490}
@@ -262,7 +262,7 @@ export default function Home() {
                 </Link>
                 <div className="flex items-center gap-2 text-gray-600 text-sm">
                   <Phone size={14} className="text-[#c9a84c]" />
-                  +91 99007 77777
+                  +91 88925366694
                 </div>
               </div>
             </div>
