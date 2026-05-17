@@ -1,0 +1,545 @@
+{
+  "language": {
+    "label": "Change language"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "treatments": "Treatments",
+    "partners": "Partners",
+    "process": "Our Process",
+    "contact": "Contact",
+    "estimate": "Estimate Your Cost"
+  },
+  "common": {
+    "backToHome": "Back to Home",
+    "contactUs": "Contact Us",
+    "contactUsToday": "Contact Us Today",
+    "estimateYourCost": "Estimate Your Cost",
+    "getYourEstimate": "Get Your Estimate",
+    "learnMore": "Learn More",
+    "inquireNow": "Inquire Now",
+    "startYourJourney": "Start Your Journey",
+    "planYourJourney": "Plan Your Journey",
+    "readOurStory": "Read Our Story",
+    "uploadQuote": "Upload Quote",
+    "viewAllTreatments": "View All Treatments"
+  },
+  "brand": {
+    "founderName": "Khalid Mahmood Aboushar",
+    "founderTitle": "Founder & CEO",
+    "founderRole": "Former P.R.O for the Consul General of UAE in India",
+    "wellnessTourism": "Wellness Tourism"
+  },
+  "home": {
+    "heroBadge": "The Gold Standard of Health Tourism",
+    "heroTitleLuxury": "Luxury",
+    "heroTitleHealing": "Healing",
+    "heroTitleRedefined": "Redefined.",
+    "heroSubtitle": "Premier medical facilitation in Bengaluru's most prestigious hospitals, paired with opulent 5-star recovery stays.",
+    "excellenceLabel": "Excellence",
+    "jciAccredited": "JCI Accredited",
+    "jciDesc": "Partnered with India's most advanced clinical centers.",
+    "leadership": "Leadership",
+    "founderHeading": "The Face Behind K.M.A.",
+    "founderQuote": "\"We are not just facilitators; we are your family in a foreign land. Our mission is to ensure that every patient who travels to India returns home not just healed, but touched by the warmth and care they received.\"",
+    "whyChooseUs": "Why Choose Us",
+    "unmatchedStandards": "Unmatched Standards.",
+    "differenceText": "What makes us different is our unwavering commitment to clinical brilliance.",
+    "qualifiedDoctors": "Qualified Doctors",
+    "qualifiedDoctorsDesc": "Expert physicians delivering international medical excellence.",
+    "ourLegacy": "Our Legacy",
+    "legacyHeading": "Serving the World with Indian Hospitality for 25+ Years.",
+    "legacyQuote": "\"We consider, protect, and provide for you as if you were our own family.\"",
+    "beyondBorders": "Beyond Borders.",
+    "beyondBordersText": "K.M.A Wellness Tourism isn't just a facilitator; we are your guardians in a foreign land. We bridge the gap between world-class Indian healthcare and global patients seeking hope.",
+    "ourHeritage": "Our Heritage",
+    "heritageDesc": "Based in Bengaluru, serving the world.",
+    "ourVision": "Our Vision",
+    "visionDesc": "To become the world's most trusted medical tourism partner, distinguishing ourselves through transparency.",
+    "ourMission": "Our Mission",
+    "missionDesc": "To provide affordable, accessible, and high-quality healthcare solutions with a touch of royal hospitality.",
+    "explore": "Explore",
+    "eliteNetwork": "Elite Network",
+    "worldClassPartners": "World Class Partners.",
+    "partnersDesc": "We have curated an exclusive ecosystem of JCI-accredited medical institutions and 5-star hospitality brands.",
+    "medicalExcellence": "Medical Excellence",
+    "eliteHospitalNetwork": "Elite Hospital Network",
+    "luxuryHospitality": "Luxury Hospitality",
+    "premiumRecoveryStays": "Premium Recovery Stays",
+    "officialGuarantee": "Official Guarantee",
+    "bestPriceMatched": "Best Price Matched.",
+    "priceMatchDesc": "Bring us any official quote from another medical tourism facilitator, and we promise to match the price while upgrading your experience with 5-star hospitality.",
+    "response24h": "24h Response",
+    "ourServices": "Our Services.",
+    "servicesDesc": "A complete suite of luxury concierge services designed for a seamless, world-class medical journey.",
+    "medicalTreatments": "Medical Treatments.",
+    "treatmentsDesc": "Access to India's finest medical specialists and advanced procedures across a wide range of specialties.",
+    "stats": {
+      "happyPatients": "Happy Patients",
+      "satisfactionRate": "Satisfaction Rate",
+      "transparent": "Transparent",
+      "bestSupport": "Best Support"
+    },
+    "why": {
+      "professionalStaff": {
+        "title": "Professional Staff",
+        "desc": "Dedicated care and comfort specialists."
+      },
+      "transparentPricing": {
+        "title": "Transparent Pricing",
+        "desc": "Competitive rates with no hidden costs."
+      },
+      "qualifiedDoctors": {
+        "title": "Qualified Doctors",
+        "desc": "Highly skilled expert physicians."
+      },
+      "seamlessCare": {
+        "title": "Seamless Care",
+        "desc": "Effortless medical travel support."
+      }
+    },
+    "services": {
+      "travel": {
+        "title": "Travel",
+        "desc": "Full-service flight booking and itinerary management."
+      },
+      "luxuryTransport": {
+        "title": "Luxury Transport",
+        "desc": "Chauffeured car rentals and premium airport transfers."
+      },
+      "accommodation": {
+        "title": "Accommodation",
+        "desc": "Exclusive bookings at 5-star recovery suites."
+      },
+      "attestationApostille": {
+        "title": "Attestation & Apostille",
+        "desc": "Seamless document authentication and embassy attestation."
+      },
+      "languageSupport": {
+        "title": "Language Support",
+        "desc": "Professional Arabic and multi-language translation."
+      },
+      "leisureTours": {
+        "title": "Leisure & Tours",
+        "desc": "Curated sightseeing tours for companions."
+      }
+    },
+    "partners": {
+      "clinicalExcellence": "Clinical Excellence",
+      "advancedHealthcare": "Advanced Healthcare",
+      "multiSpeciality": "Multi-Speciality",
+      "roboticSurgery": "Robotic Surgery",
+      "specializedCancerCare": "Specialized Cancer Care",
+      "royalStay": "Royal Stay",
+      "heritageLuxury": "Heritage Luxury",
+      "eliteSuites": "Elite Suites",
+      "ecoLuxury": "Eco Luxury",
+      "vipRecovery": "VIP Recovery",
+      "modernOpulence": "Modern Opulence"
+    },
+    "priceSteps": {
+      "upload": {
+        "title": "Upload Your Quote",
+        "desc": "Securely submit your existing medical treatment plan and cost estimate."
+      },
+      "analyze": {
+        "title": "We Analyze & Optimize",
+        "desc": "Our medical board reviews the plan to ensure clinical excellence and cost efficiency."
+      },
+      "upgrade": {
+        "title": "The K.M.A Upgrade",
+        "desc": "We match the price but upgrade your hospital suite and recovery hotel."
+      }
+    }
+  },
+  "about": {
+    "story": "Our Story",
+    "titleStart": "About",
+    "titleBrand": "K.M.A.",
+    "subtitle": "Bridging the gap between world-class Indian healthcare and global patients seeking hope, with the warmth of royal hospitality.",
+    "visionOf": "A Vision of",
+    "compassionateCare": "Compassionate Care.",
+    "founderText": "Founded by Khalid Mahmood Aboushar, K.M.A Wellness Tourism was born from a deep-seated desire to make world-class healthcare accessible to everyone, regardless of borders.",
+    "founderQuote": "\"We are not just facilitators; we are your family in a foreign land. Our mission is to ensure that every patient who travels to India returns home not just healed, but touched by the warmth and care they received.\"",
+    "trustQuote": "\"Healing is a journey of trust. At K.M.A, we honor that trust with transparency, excellence, and unwavering support.\"",
+    "missionTitle": "Our Mission",
+    "missionText": "To provide affordable, accessible, and high-quality healthcare solutions with a touch of royal hospitality. We strive to remove the stress from medical travel, handling every logistical detail so our patients can focus entirely on their recovery.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become the world's most trusted medical tourism partner, distinguishing ourselves through transparency, clinical excellence, and an unmatched standard of personalized care. We envision a world where quality healthcare knows no borders.",
+    "stats": {
+      "years": "Years of Experience",
+      "patients": "Happy Patients",
+      "hospitals": "Partner Hospitals"
+    },
+    "missionPoints": {
+      "patientFirst": "Patient-First Approach",
+      "transparency": "Transparency & Ethics",
+      "support": "End-to-End Support"
+    },
+    "visionPoints": {
+      "access": "Global Healthcare Access",
+      "innovation": "Innovation in Service",
+      "healing": "Holistic Healing"
+    }
+  },
+  "services": {
+    "badge": "Concierge Excellence",
+    "titleStart": "Our",
+    "titleHighlight": "Services.",
+    "subtitle": "We provide a complete ecosystem of luxury support services, handling every logistical detail so you can focus entirely on your healing journey.",
+    "standardBadge": "The KMA Standard",
+    "standardTitle": "More Than Just Facilitation.",
+    "standardText": "We believe that healing is influenced by your environment and state of mind. Our services are designed not just to move you from point A to point B, but to wrap you in a cocoon of comfort, luxury, and care throughout your journey.",
+    "highlights": {
+      "fiveStar": {
+        "title": "5-Star Standards",
+        "desc": "We partner only with the best in hospitality."
+      },
+      "concierge": {
+        "title": "Personal Concierge",
+        "desc": "Dedicated support manager for your entire stay."
+      },
+      "coordination": {
+        "title": "Medical Coordination",
+        "desc": "Seamless alignment between travel and treatment."
+      },
+      "privacy": {
+        "title": "Total Privacy",
+        "desc": "Discreet handling of all your personal details."
+      }
+    },
+    "items": {
+      "travel": {
+        "title": "Travel",
+        "desc": "Comprehensive flight management including medical clearances, stretcher services, and seamless connections for a stress-free journey."
+      },
+      "luxuryTransport": {
+        "title": "Luxury Transport",
+        "desc": "Fleet of premium vehicles with professional chauffeurs for all your airport transfers, hospital visits, and city travel needs."
+      },
+      "accommodation": {
+        "title": "Accommodation",
+        "desc": "Curated stays at Bengaluru's finest 5-star hotels, ensuring your recovery environment is as comfortable and luxurious as it is healing."
+      },
+      "attestationApostille": {
+        "title": "Attestation & Apostille",
+        "desc": "Seamless document authentication and embassy attestation services to ensure all your paperwork is handled efficiently."
+      },
+      "languageSupport": {
+        "title": "Language Support",
+        "desc": "Professional Arabic and multi-language translation services to ensure clear communication throughout your medical journey."
+      },
+      "leisureTours": {
+        "title": "Leisure & Tours",
+        "desc": "Curated sightseeing tours and leisure activities for patients and their companions during recovery periods."
+      }
+    },
+    "standard": {
+      "access": {
+        "title": "24/7 Personal Access",
+        "desc": "Direct line to your personal concierge manager at all times."
+      },
+      "partners": {
+        "title": "Vetted Partners Only",
+        "desc": "We only work with JCI-accredited hospitals and 5-star hotels."
+      },
+      "transparent": {
+        "title": "Transparent Handling",
+        "desc": "Clear communication and pricing with no hidden costs."
+      }
+    }
+  },
+  "treatments": {
+    "badge": "World-Class Care",
+    "titleStart": "Medical",
+    "titleHighlight": "Treatments.",
+    "subtitle": "Access to India's finest medical specialists and advanced procedures across a wide range of specialties.",
+    "items": {
+      "stemCellTherapy": {
+        "title": "Stem Cell Therapy",
+        "desc": "Cutting-edge regenerative medicine using stem cells to treat various conditions, promote natural healing, and restore cellular function."
+      },
+      "neurology": {
+        "title": "Neurology",
+        "desc": "Expert diagnostic and therapeutic care for complex neurological disorders, ensuring optimal brain and nervous system health."
+      },
+      "infertility": {
+        "title": "Infertility",
+        "desc": "Compassionate, personalized fertility treatments to help you build your family using the latest reproductive technologies."
+      },
+      "cardiacCare": {
+        "title": "Cardiac Care",
+        "desc": "Advanced cardiovascular treatments including bypass surgery, valve replacement, and minimally invasive cardiac procedures."
+      },
+      "oncology": {
+        "title": "Oncology",
+        "desc": "Comprehensive cancer care with access to the latest treatments, precision medicine, and world-renowned oncologists."
+      },
+      "orthopedics": {
+        "title": "Orthopedics",
+        "desc": "Expert musculoskeletal care including joint replacement, spine surgery, and sports medicine with rapid recovery protocols."
+      },
+      "neuroSurgery": {
+        "title": "Neuro-Surgery",
+        "desc": "Advanced neurosurgical procedures using cutting-edge technology for brain and spinal conditions with precision care."
+      },
+      "maternityIvf": {
+        "title": "Maternity/IVF",
+        "desc": "Comprehensive maternity care and advanced IVF treatments with experienced fertility specialists and modern facilities."
+      },
+      "ophthalmology": {
+        "title": "Ophthalmology",
+        "desc": "Advanced eye care including LASIK, cataract surgery, retinal treatments, and corneal procedures with cutting-edge technology."
+      },
+      "cosmeticSurgery": {
+        "title": "Cosmetic Surgery",
+        "desc": "Premium aesthetic procedures performed by top cosmetic surgeons with natural-looking results and minimal downtime."
+      },
+      "dentalCare": {
+        "title": "Dental Care",
+        "desc": "Comprehensive dental treatments from cosmetic dentistry to complex oral surgery with world-class dental specialists."
+      },
+      "organTransplant": {
+        "title": "Organ Transplant",
+        "desc": "Expert organ transplant services with comprehensive pre and post-operative care at leading transplant centers."
+      },
+      "bariatricSurgery": {
+        "title": "Bariatric Surgery",
+        "desc": "Advanced weight-loss surgery programs including gastric bypass and sleeve gastrectomy with comprehensive lifestyle support."
+      }
+    }
+  },
+  "partners": {
+    "badge": "Elite Network",
+    "titleStart": "Our",
+    "titleHighlight": "Partners.",
+    "subtitle": "We have curated an exclusive ecosystem of JCI-accredited medical institutions and 5-star hospitality brands to ensure your journey is nothing short of exceptional.",
+    "medicalExcellence": "Medical Excellence",
+    "leadingHospitals": "Leading Hospitals",
+    "luxuryHospitality": "Luxury Hospitality",
+    "recoverySanctuaries": "Recovery Sanctuaries",
+    "medical": {
+      "manipal": {
+        "subtitle": "Multi-Specialty & Quaternary Care",
+        "desc": "One of India's leading multi-specialty healthcare providers, Manipal Hospitals is renowned for its patient-centric approach and clinical excellence. With state-of-the-art infrastructure and a distinguished panel of doctors, they offer cutting-edge treatments in oncology, cardiology, and organ transplants.",
+        "tags": {
+          "one": "JCI Accredited",
+          "two": "Robotic Surgery Center",
+          "three": "Comprehensive Cancer Care"
+        },
+        "quote": "\"Their holistic approach ensures that your medical treatment is supported by compassionate care, advanced technology, and a healing environment.\""
+      },
+      "apollo": {
+        "subtitle": "Advanced Healthcare & Research",
+        "desc": "A pioneer in private healthcare in India, bringing world-class medical expertise and technology to patients globally.",
+        "tags": {
+          "one": "Proton Cancer Centre",
+          "two": "Telemedicine",
+          "three": "24/7 Emergency"
+        },
+        "quote": "\"With advanced technological support and a patient-first methodology, your treatment journey is seamless and reassuring.\""
+      },
+      "fortis": {
+        "subtitle": "Integrated Healthcare Services",
+        "desc": "A leading integrated healthcare delivery service provider, committed to clinical excellence and patient safety.",
+        "tags": {
+          "one": "Heart Transplant",
+          "two": "Advanced ICU",
+          "three": "Patient Centric"
+        },
+        "quote": "\"Their focus on safety and personalized support programs helps build a healing and stress-free environment for recovery.\""
+      },
+      "aster": {
+        "subtitle": "Advanced Surgical Care",
+        "desc": "Known for advanced robotic surgery capabilities and comprehensive multi-specialty care with modern infrastructure.",
+        "tags": {
+          "one": "Robotic Surgery",
+          "two": "Multi-Specialty",
+          "three": "Advanced Care"
+        },
+        "quote": "\"Aster CMI represents the future of surgical precision and patient-centered care.\""
+      },
+      "cytecare": {
+        "subtitle": "Specialized Cancer Care",
+        "desc": "India's dedicated comprehensive cancer care hospital offering precision oncology and personalized treatment plans.",
+        "tags": {
+          "one": "Cancer Specialists",
+          "two": "Precision Oncology",
+          "three": "Research-Driven"
+        },
+        "quote": "\"Cytecare brings hope through innovation and personalized cancer treatment protocols.\""
+      },
+      "ivfAccess": {
+        "subtitle": "Fertility Clinic",
+        "desc": "Providing world-class fertility treatments with high success rates and personalized reproductive care.",
+        "tags": {
+          "one": "IVF",
+          "two": "IUI",
+          "three": "ICSI"
+        },
+        "quote": "\"IVF Access combines advanced technology with compassionate care to help families achieve their dreams.\""
+      },
+      "shishuIvf": {
+        "subtitle": "Fertility Clinic",
+        "desc": "Dedicated to comprehensive fertility care with evidence-based treatments and successful outcomes.",
+        "tags": {
+          "one": "Expert Team",
+          "two": "Comprehensive Care",
+          "three": "Modern Facilities"
+        },
+        "quote": "\"Shishu IVF offers a patient-centric approach to fertility care and reproductive medicine.\""
+      }
+    },
+    "hotels": {
+      "leela": {
+        "tag": "Royal Stay",
+        "desc": "Bengaluru's most iconic luxury hotel offering royal hospitality and world-class amenities for recovery."
+      },
+      "taj": {
+        "tag": "Heritage Luxury",
+        "desc": "Heritage luxury at its finest with personalized service and tranquil environments for healing."
+      },
+      "jw": {
+        "tag": "Elite Suites",
+        "desc": "Premium suites designed for comfort with modern amenities and exceptional dining."
+      },
+      "itc": {
+        "tag": "Eco Luxury",
+        "desc": "Sustainable luxury with LEED Platinum certification, offering green wellness stays."
+      },
+      "ritz": {
+        "tag": "VIP Recovery",
+        "desc": "Ultra-luxury VIP recovery suites with 24/7 butler service and world-class dining."
+      },
+      "conrad": {
+        "tag": "Modern Opulence",
+        "desc": "Contemporary luxury with spacious rooms, wellness facilities, and gourmet dining."
+      },
+      "shathayu": {
+        "tag": "Wellness Retreat",
+        "desc": "Authentic Ayurvedic wellness retreat offering traditional healing and rejuvenation."
+      },
+      "ayurvedagram": {
+        "tag": "Heritage Wellness",
+        "desc": "Heritage wellness center specializing in traditional Ayurvedic treatments and therapies."
+      },
+      "lemonTree": {
+        "tag": "Premium Stay",
+        "desc": "Premium hospitality with warm service, modern amenities, and comfortable stays."
+      },
+      "fourSeasons": {
+        "tag": "Luxury Retreat",
+        "desc": "World-renowned luxury hospitality with personalized care and exceptional facilities."
+      }
+    }
+  },
+  "process": {
+    "badge": "Our Methodology",
+    "titleStart": "The K.M.A",
+    "titleHighlight": "Experience.",
+    "steps": {
+      "consultation": {
+        "phase": "Analysis & Planning",
+        "title": "Initial Consultation",
+        "desc": "Our journey begins when you reach out with your health concerns or medical reports. We meticulously analyze your requirements to recommend the most appropriate treatment plan, complete with transparent pricing and duration estimates."
+      },
+      "travel": {
+        "phase": "Travel Logistics",
+        "title": "Travel Arrangements",
+        "desc": "Once you approve the treatment plan, we handle all travel logistics including visa assistance, flight booking, medical clearances, and airport transfers with premium vehicles."
+      },
+      "medical": {
+        "phase": "Medical Phase",
+        "title": "Hospital & Treatment",
+        "desc": "Upon arrival, you are received by our personal concierge. We coordinate with the hospital for seamless admission, ensure your medical team is briefed, and stay by your side throughout the treatment."
+      },
+      "recovery": {
+        "phase": "Recovery & Comfort",
+        "title": "Luxury Recovery",
+        "desc": "Post-treatment, we arrange your stay at a 5-star recovery hotel. Our team manages follow-up appointments, medication schedules, dietary requirements, and leisure activities for companions."
+      },
+      "support": {
+        "phase": "Ongoing Care",
+        "title": "Follow-Up & Support",
+        "desc": "Before departure, we ensure all medical documents are prepared. Our support continues after you return home with telemedicine follow-ups and assistance with any post-treatment needs."
+      },
+      "homecoming": {
+        "phase": "Homecoming",
+        "title": "Safe Return Home",
+        "desc": "We coordinate your departure logistics, ensure all medical records and prescriptions are organized, and arrange comfortable travel back home. Our relationship continues with ongoing support."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "titleStart": "Begin Your",
+    "titleHighlight": "Healing Journey",
+    "subtitle": "Our dedicated team is here to guide you every step of the way. Reach out and let us create a personalized medical travel experience for you.",
+    "reachOut": "Reach Out to Our",
+    "conciergeTeam": "Concierge Team.",
+    "intro": "Experience seamless medical travel planning with our dedicated 24/7 support team. We are here to answer your queries and guide you.",
+    "directLines": "Direct Lines",
+    "emailUs": "Email Us",
+    "responseTime": "Response time: within 2 hours",
+    "headquarters": "Headquarters",
+    "city": "Bengaluru, Karnataka",
+    "countryPostal": "India - 560084",
+    "connectWithUs": "Connect With Us",
+    "formTitleStart": "Start Your",
+    "formTitleHighlight": "Journey",
+    "formIntro": "Fill in the details below and our team will reach out within 24 hours.",
+    "fullName": "Full Name *",
+    "fullNamePlaceholder": "Mohammed Abdul",
+    "emailAddress": "Email Address *",
+    "emailPlaceholder": "abdul.m@gmail.com",
+    "phoneNumber": "Phone Number *",
+    "phonePlaceholder": "+971 12 345 6789",
+    "country": "Country *",
+    "countryPlaceholder": "United Arab Emirates",
+    "treatmentType": "Treatment Type *",
+    "selectTreatmentType": "Select Treatment Type",
+    "yourMessage": "Your Message *",
+    "messagePlaceholder": "Tell us about your medical requirements and how we can assist you...",
+    "privacyAgreement": "By submitting this form, you agree to our Privacy Policy and Terms of Service.",
+    "sendMessage": "Send Message",
+    "alertSuccess": "Thank you for your message! Our team will reach out within 24 hours.",
+    "joinCommunity": "Join Our Community",
+    "instagramText": "Follow us for daily wellness inspiration and exclusive glimpses into our facilities.",
+    "options": {
+      "cardiovascular": "Cardiovascular Surgery",
+      "oncology": "Oncology Excellence",
+      "neuro": "Neuro-Sciences",
+      "orthopedics": "Advanced Orthopedics",
+      "maternity": "Maternity/IVF",
+      "ophthalmology": "Ophthalmology",
+      "consultation": "General Consultation",
+      "others": "Others"
+    }
+  },
+  "footer": {
+    "established": "Est. 1996",
+    "wellnessTourism": "Wellness Tourism",
+    "tagline": "\"Curating world-class clinical excellence with the warmth of Indian hospitality for over two decades.\"",
+    "newsletterTitle": "Stay informed on Global Health.",
+    "newsletterText": "Join our newsletter for the latest updates on medical advancements and luxury recovery packages.",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "navigation": "Navigation",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "services": "Services",
+    "treatments": "Treatments",
+    "reachUs": "Reach Us",
+    "headquarters": "Headquarters",
+    "address": "Bengaluru, Karnataka, India - 560084",
+    "globalSupport": "Global Support",
+    "supportText": "24/7 Concierge Available",
+    "directLines": "Direct Lines",
+    "email": "Email",
+    "copyright": "© 2026 K.M.A WELLNESS TOURISM",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}
