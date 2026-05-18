@@ -73,11 +73,11 @@ export default function Footer() {
             <p className="text-gray-300 text-sm mb-4">
               {t('footer.newsletterText')}
             </p>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col gap-2 sm:flex-row" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 placeholder={t('footer.emailPlaceholder')}
-                className="flex-1 bg-[#047857] border border-gray-600 rounded px-4 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-[#f4c542]"
+                className="min-w-0 flex-1 bg-[#047857] border border-gray-600 rounded px-4 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-[#f4c542]"
               />
               <button type="submit" className="bg-[#f4c542] text-[#064e3b] px-6 py-2 rounded font-semibold text-sm hover:bg-[#d9a520] transition-colors">
                 {t('footer.subscribe')}
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-[#059669]">
+        <div className="grid grid-cols-1 gap-8 pt-8 border-t border-[#059669] sm:grid-cols-2 md:grid-cols-4">
           <div>
             <h4 className="text-[#f4c542] font-semibold text-sm uppercase tracking-wider mb-4">{t('footer.navigation')}</h4>
             <ul className="space-y-2">
@@ -126,26 +126,26 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <h4 className="text-[#f4c542] font-semibold text-sm uppercase tracking-wider mb-4">{t('footer.reachUs')}</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-[#f4c542] mt-0.5 shrink-0" />
-                <div>
+                <div className="min-w-0">
                   <div className="text-sm font-semibold">{t('footer.headquarters')}</div>
                   <p className="text-gray-300 text-sm">{t('footer.address')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Globe size={16} className="text-[#f4c542] mt-0.5 shrink-0" />
-                <div>
+                <div className="min-w-0">
                   <div className="text-sm font-semibold">{t('footer.globalSupport')}</div>
                   <p className="text-gray-300 text-sm">{t('footer.supportText')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Phone size={16} className="text-[#f4c542] mt-0.5 shrink-0" />
-                <div>
+                <div className="min-w-0">
                   <div className="text-sm font-semibold">{t('footer.directLines')}</div>
                   <a href="tel:+919986879931" dir="ltr" className="block text-gray-300 text-sm hover:text-[#f4c542] transition-colors">+91 99868 79931</a>
                   <a href="tel:+918892536694" dir="ltr" className="block text-gray-300 text-sm hover:text-[#f4c542] transition-colors">+91 8892536694</a>
@@ -153,9 +153,9 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Mail size={16} className="text-[#f4c542] mt-0.5 shrink-0" />
-                <div>
+                <div className="min-w-0">
                   <div className="text-sm font-semibold">{t('footer.email')}</div>
-                  <p className="text-gray-300 text-sm">abudanish@shifaway.com</p>
+                  <a href="mailto:abudanish@shifaway.com" className="block break-all text-gray-300 text-sm hover:text-[#f4c542] transition-colors">abudanish@shifaway.com</a>
                 </div>
               </div>
             </div>
