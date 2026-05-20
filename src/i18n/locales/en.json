@@ -34,10 +34,10 @@
   },
   "home": {
     "heroBadge": "The Gold Standard of Health Tourism",
-    "heroTitleLuxury": "Luxury",
-    "heroTitleHealing": "Healing",
-    "heroTitleRedefined": "Redefined.",
-    "heroSubtitle": "Premier medical facilitation in Bengaluru's most prestigious hospitals, paired with opulent 5-star recovery stays.",
+    "heroTitleLuxury": "Luxury Medical Care,",
+    "heroTitleHealing": "Thoughtfully Coordinated.",
+    "heroTitleRedefined": "",
+    "heroSubtitle": "Personalized treatment coordination, hospital access, and premium recovery support for international patients in Bengaluru.",
     "excellenceLabel": "Excellence",
     "jciAccredited": "JCI Accredited",
     "jciDesc": "Partnered with India's most advanced clinical centers.",
@@ -186,9 +186,9 @@
   },
   "services": {
     "badge": "Concierge Excellence",
-    "titleStart": "Our",
+    "titleStart": "Personalized Support",
     "titleHighlight": "Services.",
-    "subtitle": "We provide a complete ecosystem of luxury support services, handling every logistical detail so you can focus entirely on your healing journey.",
+    "subtitle": "We manage every aspect of your medical travel experience — from hospital coordination and travel arrangements to luxury recovery accommodations and ongoing patient support.",
     "standardBadge": "The Shifaway Standard",
     "standardTitle": "More Than Just Facilitation.",
     "standardText": "We believe that healing is influenced by your environment and state of mind. Our services are designed not just to move you from point A to point B, but to wrap you in a cocoon of comfort, luxury, and care throughout your journey.",
@@ -286,7 +286,7 @@
         "desc": "Advanced neurosurgical procedures using cutting-edge technology for brain and spinal conditions with precision care."
       },
       "maternityIvf": {
-        "title": "Maternity/IVF",
+        "title": "IVF & Maternity",
         "desc": "Comprehensive maternity care and advanced IVF treatments with experienced fertility specialists and modern facilities."
       },
       "ophthalmology": {
@@ -437,8 +437,8 @@
   },
   "process": {
     "badge": "Our Methodology",
-    "titleStart": "The Shifaway",
-    "titleHighlight": "Experience.",
+    "titleStart": "How We Coordinate",
+    "titleHighlight": "Your Care.",
     "steps": {
       "consultation": {
         "phase": "Analysis & Planning",
@@ -477,9 +477,9 @@
     "titleStart": "Begin Your",
     "titleHighlight": "Healing Journey",
     "subtitle": "Our dedicated team is here to guide you every step of the way. Reach out and let us create a personalized medical travel experience for you.",
-    "reachOut": "Reach Out to Our",
-    "conciergeTeam": "Concierge Team.",
-    "intro": "Experience seamless medical travel planning with our dedicated 24/7 support team. We are here to answer your queries and guide you.",
+    "reachOut": "Speak With Our",
+    "conciergeTeam": "Care Coordination Team.",
+    "intro": "Our dedicated team is available 24/7 to assist you with treatment planning, hospital coordination, travel arrangements, and personalized recovery support.",
     "directLines": "Direct Lines",
     "emailUs": "Email Us",
     "responseTime": "Response time: within 2 hours",
@@ -505,6 +505,11 @@
     "privacyAgreement": "By submitting this form, you agree to our Privacy Policy and Terms of Service.",
     "sendMessage": "Send Message",
     "alertSuccess": "Thank you for your message! Our team will reach out within 24 hours.",
+    "whatsappCtaTitle": "Prefer to chat?",
+    "whatsappCtaText": "Many international patients prefer messaging over filling forms. Reach our care coordinators instantly on WhatsApp.",
+    "whatsappButton": "Chat With Us on WhatsApp",
+    "whatsappShort": "WhatsApp Us",
+    "confidentialityNote": "All patient inquiries and medical information are handled with strict confidentiality by our care coordination team.",
     "joinCommunity": "Join Our Community",
     "instagramText": "Follow us for daily wellness inspiration and exclusive glimpses into our facilities.",
     "options": {
@@ -512,7 +517,7 @@
       "oncology": "Oncology Excellence",
       "neuro": "Neuro-Sciences",
       "orthopedics": "Advanced Orthopedics",
-      "maternity": "Maternity/IVF",
+      "maternity": "IVF & Maternity",
       "ophthalmology": "Ophthalmology",
       "consultation": "General Consultation",
       "others": "Others"

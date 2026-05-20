@@ -26,15 +26,15 @@ const services = [
 ]
 
 const treatments = [
-  { key: 'stemCellTherapy', path: '/treatments/stem-cell-therapy', img: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&h=300&fit=crop' },
-  { key: 'neurology', path: '/treatments/neurology', img: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop' },
-  { key: 'infertility', path: '/treatments/infertility', img: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=300&fit=crop' },
-  { key: 'cardiacCare', path: '/treatments/cardiac-care', img: 'https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=400&h=300&fit=crop' },
-  { key: 'oncology', path: '/treatments/oncology', img: 'https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=400&h=300&fit=crop' },
-  { key: 'orthopedics', path: '/treatments/orthopedics', img: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop' },
-  { key: 'neuroSurgery', path: '/treatments/neuro-surgery', img: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop' },
-  { key: 'maternityIvf', path: '/treatments/maternity-ivf', img: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&h=300&fit=crop' },
-  { key: 'ophthalmology', path: '/treatments/ophthalmology', img: 'https://images.unsplash.com/photo-1577401132921-cb39bb0adcff?w=400&h=300&fit=crop' },
+  { key: 'stemCellTherapy', path: '/treatments/stem-cell-therapy', img: '/images/partners/Stem%20Cell.jpeg' },
+  { key: 'neurology', path: '/treatments/neurology', img: '/images/partners/Nurologo.jpeg' },
+  { key: 'infertility', path: '/treatments/infertility', img: '/images/partners/iNFERTILITY%20.jpeg' },
+  { key: 'cardiacCare', path: '/treatments/cardiac-care', img: '/images/partners/Heart.jpeg' },
+  { key: 'oncology', path: '/treatments/oncology', img: '/images/partners/tUMOR.jpeg' },
+  { key: 'orthopedics', path: '/treatments/orthopedics', img: '/images/partners/Ortho.jpeg' },
+  { key: 'neuroSurgery', path: '/treatments/neuro-surgery', img: '/images/partners/Neuro%20Surgery.jpeg' },
+  { key: 'maternityIvf', path: '/treatments/maternity-ivf', img: '/images/partners/Maternity%20IVF.jpeg' },
+  { key: 'ophthalmology', path: '/treatments/ophthalmology', img: '/images/partners/Opthmology.jpeg' },
 ]
 
 const medicalPartners = [
@@ -84,9 +84,13 @@ export default function Home() {
             <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('home.heroBadge')}</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
-            {t('home.heroTitleLuxury')}<br />
-            <span className="italic text-[#f4c542]">{t('home.heroTitleHealing')}</span><br />
-            {t('home.heroTitleRedefined')}
+            {t('home.heroTitleLuxury')} <span className="italic text-[#f4c542]">{t('home.heroTitleHealing')}</span>
+            {t('home.heroTitleRedefined') && (
+              <>
+                <br />
+                {t('home.heroTitleRedefined')}
+              </>
+            )}
           </h1>
           <p className="text-gray-300 max-w-lg mb-8 text-lg">
             {t('home.heroSubtitle')}
