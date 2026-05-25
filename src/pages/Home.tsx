@@ -120,7 +120,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://api.dicebear.com/9.x/initials/svg?seed=Abu%20Danish&backgroundColor=047857&fontWeight=700&fontSize=40"
+                src="/images/partners/Tousif%20Ulla%20Khan-%20pic.jpeg"
                 alt="Shifaway"
                 width={420}
                 height={490}

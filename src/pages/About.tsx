@@ -38,7 +38,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="relative mx-auto w-full max-w-sm sm:max-w-md overflow-hidden rounded-2xl shadow-xl aspect-[4/5] bg-[#047857]">
               <img
-                src="https://api.dicebear.com/9.x/initials/svg?seed=Abu%20Danish&backgroundColor=047857&fontWeight=700&fontSize=40"
+                src="/images/partners/Tousif%20Ulla%20Khan-%20pic.jpeg"
                 alt="Shifaway"
                 className="h-full w-full object-cover"
                 onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/047857/f4c542/png?text=Founder' }}
