@@ -41,15 +41,15 @@ export default function Process() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#047857] text-white py-20">
+      <section className="bg-[#071B4A] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-6">
-            <Award size={14} className="text-[#f4c542]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('process.badge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#E0B04B]/20 border border-[#E0B04B]/40 rounded-full px-4 py-1.5 mb-6">
+            <Award size={14} className="text-[#E0B04B]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#E0B04B]">{t('process.badge')}</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             {t('process.titleStart')}<br />
-            <span className="italic text-[#f4c542]">{t('process.titleHighlight')}</span>
+            <span className="italic text-[#E0B04B]">{t('process.titleHighlight')}</span>
           </h1>
         </div>
       </section>
@@ -65,25 +65,25 @@ export default function Process() {
                     src={step.img}
                     alt={t(`process.steps.${step.key}.title`)}
                     className="rounded-2xl shadow-lg w-full h-72 object-cover"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/047857/f4c542/png?text=${encodeURIComponent(t(`process.steps.${step.key}.title`))}` }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/071B4A/E0B04B/png?text=${encodeURIComponent(t(`process.steps.${step.key}.title`))}` }}
                   />
                 </div>
                 <div className="lg:w-1/2">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-[#047857] p-2.5 rounded-lg">
-                      <step.icon size={24} className="text-[#f4c542]" />
+                    <div className="bg-[#071B4A] p-2.5 rounded-lg">
+                      <step.icon size={24} className="text-[#E0B04B]" />
                     </div>
-                    <div className="bg-[#f4c542]/10 px-3 py-1 rounded-full">
-                      <span className="text-[#f4c542] text-xs font-semibold uppercase tracking-wider">{t(`process.steps.${step.key}.phase`)}</span>
+                    <div className="bg-[#E0B04B]/10 px-3 py-1 rounded-full">
+                      <span className="text-[#E0B04B] text-xs font-semibold uppercase tracking-wider">{t(`process.steps.${step.key}.phase`)}</span>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#047857] mb-3">{t(`process.steps.${step.key}.title`)}</h3>
-                  <p className="text-gray-600">{t(`process.steps.${step.key}.desc`)}</p>
+                  <h3 className="text-2xl font-bold text-[#071B4A] mb-3">{t(`process.steps.${step.key}.title`)}</h3>
+                  <p className="text-[#06122F]/70">{t(`process.steps.${step.key}.desc`)}</p>
                 </div>
 
                 {i < steps.length - 1 && (
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2">
-                    <div className="w-px h-8 bg-[#f4c542]/30" />
+                    <div className="w-px h-8 bg-[#E0B04B]/30" />
                   </div>
                 )}
               </div>
@@ -93,8 +93,8 @@ export default function Process() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#047857] text-center">
-        <Link to="/contact" className="inline-flex items-center gap-2 bg-[#f4c542] text-[#064e3b] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#d9a520] transition-colors">
+      <section className="py-16 bg-[#071B4A] text-center">
+        <Link to="/contact" className="inline-flex items-center gap-2 bg-[#E0B04B] text-[#06122F] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#C9972E] transition-colors">
           {t('common.startYourJourney')} <ChevronRight size={16} className="rtl:rotate-180" />
         </Link>
       </section>

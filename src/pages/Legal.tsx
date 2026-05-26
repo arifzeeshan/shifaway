@@ -117,11 +117,11 @@ function renderBody(body: string) {
 
   return parts.map((part) => {
     if (part === '+91 99868 79931') {
-      return <a key={part} href="tel:+919986879931" dir="ltr" className="font-medium text-[#047857] transition-colors hover:text-[#f4c542]">{part}</a>
+      return <a key={part} href="tel:+919986879931" dir="ltr" className="font-medium text-[#071B4A] transition-colors hover:text-[#E0B04B]">{part}</a>
     }
 
     if (part === '+91 8892536694') {
-      return <a key={part} href="tel:+918892536694" dir="ltr" className="font-medium text-[#047857] transition-colors hover:text-[#f4c542]">{part}</a>
+      return <a key={part} href="tel:+918892536694" dir="ltr" className="font-medium text-[#071B4A] transition-colors hover:text-[#E0B04B]">{part}</a>
     }
 
     return part
@@ -132,31 +132,31 @@ export default function Legal({ type }: LegalPageProps) {
   const page = policies[type]
 
   return (
-    <div className="bg-[#fdfcf7] text-[#047857]">
-      <section className="bg-[#047857] px-4 py-20 text-white sm:px-6 lg:px-8">
+    <div className="bg-[#F5F5F5] text-[#071B4A]">
+      <section className="bg-[#071B4A] px-4 py-20 text-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <Link to="/" className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#f4c542]">
+          <Link to="/" className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#E0B04B]">
             <ArrowLeft size={16} className="rtl:rotate-180" />
             Back to Home
           </Link>
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#f4c542]/40 bg-[#f4c542]/20 px-4 py-1.5">
-            <FileText size={14} className="text-[#f4c542]" />
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#f4c542]">{page.badge}</span>
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#E0B04B]/40 bg-[#E0B04B]/20 px-4 py-1.5">
+            <FileText size={14} className="text-[#E0B04B]" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#E0B04B]">{page.badge}</span>
           </div>
           <h1 className="mb-4 text-5xl font-bold md:text-6xl">
-            {page.titleStart} <span className="italic text-[#f4c542]">{page.titleHighlight}</span>
+            {page.titleStart} <span className="italic text-[#E0B04B]">{page.titleHighlight}</span>
           </h1>
           <p className="text-white/70">{page.updated}</p>
         </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="rounded-[2rem] border border-gray-100 bg-white p-8 shadow-sm md:p-10">
+        <div className="rounded-[2rem] border border-[#D6D6D6]/50 bg-white p-8 shadow-sm md:p-10">
           <div className="space-y-8">
             {page.sections.map((section) => (
               <section key={section.title}>
                 <h2 className="mb-3 text-xl font-bold">{section.title}</h2>
-                <p className="leading-relaxed text-gray-600">{renderBody(section.body)}</p>
+                <p className="leading-relaxed text-[#06122F]/70">{renderBody(section.body)}</p>
               </section>
             ))}
           </div>

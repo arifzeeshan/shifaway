@@ -66,8 +66,8 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-[#047857] text-white min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#047857] via-[#047857]/90 to-transparent z-10" />
+      <section className="relative bg-[#071B4A] text-white min-h-[90vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#071B4A] via-[#071B4A]/90 to-transparent z-10" />
         <img
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=1200&fit=crop&auto=format&q=35"
           alt="Earth from space"
@@ -76,15 +76,15 @@ export default function Home() {
           decoding="async"
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
-          onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/1920x1080/047857/f4c542/png?text=Shifaway' }}
+          onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/1920x1080/071B4A/E0B04B/png?text=Shifaway' }}
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-8">
-            <Award size={14} className="text-[#f4c542]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('home.heroBadge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#E0B04B]/20 border border-[#E0B04B]/40 rounded-full px-4 py-1.5 mb-8">
+            <Award size={14} className="text-[#E0B04B]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#E0B04B]">{t('home.heroBadge')}</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
-            {t('home.heroTitleLuxury')} <span className="italic text-[#f4c542]">{t('home.heroTitleHealing')}</span>
+            {t('home.heroTitleLuxury')} <span className="italic text-[#E0B04B]">{t('home.heroTitleHealing')}</span>
             {t('home.heroTitleRedefined') && (
               <>
                 <br />
@@ -92,11 +92,11 @@ export default function Home() {
               </>
             )}
           </h1>
-          <p className="text-gray-300 max-w-lg mb-8 text-lg">
+          <p className="text-[#D6D6D6] max-w-lg mb-8 text-lg">
             {t('home.heroSubtitle')}
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link to="/contact" className="bg-[#f4c542] text-[#064e3b] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#d9a520] transition-colors inline-flex items-center gap-2">
+            <Link to="/contact" className="bg-[#E0B04B] text-[#06122F] px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-[#C9972E] transition-colors inline-flex items-center gap-2">
               {t('common.getYourEstimate')} <ChevronRight size={16} className="rtl:rotate-180" />
             </Link>
             <Link to="/contact" className="border border-white/30 text-white px-8 py-3 rounded font-bold text-sm tracking-wider uppercase hover:bg-white/10 transition-colors">
@@ -104,18 +104,18 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-12 bg-white/10 backdrop-blur-sm rounded-xl p-4 inline-flex items-center gap-3 max-w-sm">
-            <Award size={24} className="text-[#f4c542]" />
+            <Award size={24} className="text-[#E0B04B]" />
             <div>
-              <div className="text-xs text-[#f4c542] font-semibold uppercase tracking-wider">{t('home.excellenceLabel')}</div>
+              <div className="text-xs text-[#E0B04B] font-semibold uppercase tracking-wider">{t('home.excellenceLabel')}</div>
               <div className="font-bold text-sm">{t('home.jciAccredited')}</div>
-              <div className="text-xs text-gray-300">{t('home.jciDesc')}</div>
+              <div className="text-xs text-[#D6D6D6]">{t('home.jciDesc')}</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Founder */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -127,24 +127,24 @@ export default function Home() {
                 loading="lazy"
                 decoding="async"
                 className="rounded-2xl shadow-xl w-full max-w-md object-cover"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/047857/f4c542/png?text=Founder' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x700/071B4A/E0B04B/png?text=Founder' }}
               />
               <div className="absolute bottom-0 left-0 right-0 max-w-md bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl p-6">
                 <div className="text-white text-xl font-bold">{t('brand.founderName')}</div>
-                <p className="text-[#f4c542] text-sm font-semibold uppercase">{t('brand.founderTitle')}</p>
-                <p className="text-gray-300 text-xs">{t('brand.founderRole')}</p>
+                <p className="text-[#E0B04B] text-sm font-semibold uppercase">{t('brand.founderTitle')}</p>
+                <p className="text-[#D6D6D6] text-xs">{t('brand.founderRole')}</p>
               </div>
             </div>
             <div>
-              <div className="inline-flex items-center gap-2 text-[#8a5a00] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#C9972E] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Star size={14} />
                 {t('home.leadership')}
               </div>
-              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.founderHeading')}</h2>
-              <blockquote className="text-gray-600 text-lg italic border-l-4 border-[#f4c542] pl-4 mb-6">
+              <h2 className="text-4xl font-bold text-[#071B4A] mb-6">{t('home.founderHeading')}</h2>
+              <blockquote className="text-[#06122F]/70 text-lg italic border-l-4 border-[#E0B04B] pl-4 mb-6">
                 {t('home.founderQuote')}
               </blockquote>
-              <Link to="/about" className="inline-flex items-center gap-2 text-[#8a5a00] font-semibold hover:underline">
+              <Link to="/about" className="inline-flex items-center gap-2 text-[#C9972E] font-semibold hover:underline">
                 {t('common.readOurStory')} <ChevronRight size={16} className="rtl:rotate-180" />
               </Link>
             </div>
@@ -157,21 +157,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="inline-flex items-center gap-2 text-[#8a5a00] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#C9972E] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Award size={14} />
                 {t('home.whyChooseUs')}
               </div>
-              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.unmatchedStandards')}</h2>
-              <p className="text-gray-600 mb-8">{t('home.differenceText')}</p>
+              <h2 className="text-4xl font-bold text-[#071B4A] mb-6">{t('home.unmatchedStandards')}</h2>
+              <p className="text-[#06122F]/70 mb-8">{t('home.differenceText')}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (
                   <div key={item.key} className="flex items-start gap-3">
-                    <div className="bg-[#047857] p-2 rounded-lg shrink-0">
-                      <item.icon size={20} className="text-[#f4c542]" />
+                    <div className="bg-[#071B4A] p-2 rounded-lg shrink-0">
+                      <item.icon size={20} className="text-[#E0B04B]" />
                     </div>
                     <div>
-                      <div className="font-bold text-[#047857] text-sm">{t(`home.why.${item.key}.title`)}</div>
-                      <p className="text-gray-500 text-sm">{t(`home.why.${item.key}.desc`)}</p>
+                      <div className="font-bold text-[#071B4A] text-sm">{t(`home.why.${item.key}.title`)}</div>
+                      <p className="text-[#06122F]/60 text-sm">{t(`home.why.${item.key}.desc`)}</p>
                     </div>
                   </div>
                 ))}
@@ -186,11 +186,11 @@ export default function Home() {
                 loading="lazy"
                 decoding="async"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/047857/f4c542/png?text=Medical+Excellence' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/071B4A/E0B04B/png?text=Medical+Excellence' }}
               />
               <div className="absolute bottom-4 left-4 bg-white rounded-xl p-4 shadow-lg">
-                <div className="text-sm font-bold text-[#047857]">{t('home.qualifiedDoctors')}</div>
-                <div className="text-xs text-gray-500">{t('home.qualifiedDoctorsDesc')}</div>
+                <div className="text-sm font-bold text-[#071B4A]">{t('home.qualifiedDoctors')}</div>
+                <div className="text-xs text-[#06122F]/60">{t('home.qualifiedDoctorsDesc')}</div>
               </div>
             </div>
           </div>
@@ -198,9 +198,9 @@ export default function Home() {
       </section>
 
       {/* Legacy Stats */}
-      <section className="py-20 bg-[#047857] text-white">
+      <section className="py-20 bg-[#071B4A] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-[#f4c542] text-xs font-semibold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 text-[#E0B04B] text-xs font-semibold tracking-widest uppercase mb-4">
             <Clock size={14} />
             {t('home.ourLegacy')}
           </div>
@@ -208,12 +208,12 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             {stats.map((stat) => (
               <div key={stat.labelKey}>
-                <h3 className="text-4xl font-bold text-[#f4c542]">{stat.value}</h3>
-                <p className="text-gray-300 text-sm mt-1">{t(stat.labelKey)}</p>
+                <h3 className="text-4xl font-bold text-[#E0B04B]">{stat.value}</h3>
+                <p className="text-[#D6D6D6] text-sm mt-1">{t(stat.labelKey)}</p>
               </div>
             ))}
           </div>
-          <p className="text-gray-300 italic max-w-lg mx-auto">
+          <p className="text-[#D6D6D6] italic max-w-lg mx-auto">
             {t('home.legacyQuote')}
           </p>
         </div>
@@ -232,40 +232,40 @@ export default function Home() {
                 loading="lazy"
                 decoding="async"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/047857/f4c542/png?text=Beyond+Borders' }}
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x500/071B4A/E0B04B/png?text=Beyond+Borders' }}
               />
               <div className="absolute bottom-4 left-4 bg-white rounded-xl p-4 shadow-lg">
-                <div className="text-xs text-[#8a5a00] font-semibold uppercase">{t('home.ourHeritage')}</div>
-                <div className="text-sm text-gray-600">{t('home.heritageDesc')}</div>
+                <div className="text-xs text-[#C9972E] font-semibold uppercase">{t('home.ourHeritage')}</div>
+                <div className="text-sm text-[#06122F]/70">{t('home.heritageDesc')}</div>
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.beyondBorders')}</h2>
-              <p className="text-gray-600 mb-6">
+              <h2 className="text-4xl font-bold text-[#071B4A] mb-6">{t('home.beyondBorders')}</h2>
+              <p className="text-[#06122F]/70 mb-6">
                 {t('home.beyondBordersText')}
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <Star size={20} className="text-[#f4c542] mt-1 shrink-0" />
+                  <Star size={20} className="text-[#E0B04B] mt-1 shrink-0" />
                   <div>
-                    <div className="font-bold text-[#047857]">{t('home.ourVision')}</div>
-                    <p className="text-gray-500 text-sm">{t('home.visionDesc')}</p>
+                    <div className="font-bold text-[#071B4A]">{t('home.ourVision')}</div>
+                    <p className="text-[#06122F]/60 text-sm">{t('home.visionDesc')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Heart size={20} className="text-[#f4c542] mt-1 shrink-0" />
+                  <Heart size={20} className="text-[#E0B04B] mt-1 shrink-0" />
                   <div>
-                    <div className="font-bold text-[#047857]">{t('home.ourMission')}</div>
-                    <p className="text-gray-500 text-sm">{t('home.missionDesc')}</p>
+                    <div className="font-bold text-[#071B4A]">{t('home.ourMission')}</div>
+                    <p className="text-[#06122F]/60 text-sm">{t('home.missionDesc')}</p>
                   </div>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 items-center">
-                <Link to="/services" className="bg-[#047857] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#059669] transition-colors">
+                <Link to="/services" className="bg-[#071B4A] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#0A245F] transition-colors">
                   {t('home.explore')}
                 </Link>
-                <a href="tel:+919986879931" dir="ltr" className="flex items-center gap-2 text-gray-600 text-sm hover:text-[#f4c542] transition-colors">
-                  <Phone size={14} className="text-[#f4c542]" />
+                <a href="tel:+919986879931" dir="ltr" className="flex items-center gap-2 text-[#06122F]/70 text-sm hover:text-[#E0B04B] transition-colors">
+                  <Phone size={14} className="text-[#E0B04B]" />
                   +91 9986879931
                 </a>
               </div>
@@ -275,25 +275,25 @@ export default function Home() {
       </section>
 
       {/* Partners */}
-      <section className="py-20 bg-[#047857] text-white">
+      <section className="py-20 bg-[#071B4A] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 text-[#f4c542] text-xs font-semibold tracking-widest uppercase mb-4">
+            <div className="inline-flex items-center gap-2 text-[#E0B04B] text-xs font-semibold tracking-widest uppercase mb-4">
               <Award size={14} />
               {t('home.eliteNetwork')}
             </div>
             <h2 className="text-4xl font-bold mb-4">{t('home.worldClassPartners')}</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <p className="text-[#D6D6D6] max-w-2xl mx-auto">
               {t('home.partnersDesc')}
             </p>
           </div>
 
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
-              <Stethoscope size={20} className="text-[#f4c542]" />
+              <Stethoscope size={20} className="text-[#E0B04B]" />
               <div>
                 <h3 className="font-bold">{t('home.medicalExcellence')}</h3>
-                <p className="text-gray-400 text-sm">{t('home.eliteHospitalNetwork')}</p>
+                <p className="text-[#D6D6D6]/70 text-sm">{t('home.eliteHospitalNetwork')}</p>
               </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -318,10 +318,10 @@ export default function Home() {
 
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <Hotel size={20} className="text-[#f4c542]" />
+              <Hotel size={20} className="text-[#E0B04B]" />
               <div>
                 <h3 className="font-bold">{t('home.luxuryHospitality')}</h3>
-                <p className="text-gray-400 text-sm">{t('home.premiumRecoveryStays')}</p>
+                <p className="text-[#D6D6D6]/70 text-sm">{t('home.premiumRecoveryStays')}</p>
               </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
@@ -347,32 +347,32 @@ export default function Home() {
       </section>
 
       {/* Price Match */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="inline-flex items-center gap-2 text-[#8a5a00] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="inline-flex items-center gap-2 text-[#C9972E] text-xs font-semibold tracking-widest uppercase mb-4">
                 <Shield size={14} />
                 {t('home.officialGuarantee')}
               </div>
-              <h2 className="text-4xl font-bold text-[#047857] mb-6">{t('home.bestPriceMatched')}</h2>
-              <p className="text-gray-600 mb-6">
+              <h2 className="text-4xl font-bold text-[#071B4A] mb-6">{t('home.bestPriceMatched')}</h2>
+              <p className="text-[#06122F]/70 mb-6">
                 {t('home.priceMatchDesc')}
               </p>
               <div className="flex items-center gap-4">
-                <Link to="/contact" className="bg-[#f4c542] text-[#064e3b] px-6 py-3 rounded font-bold text-sm inline-flex items-center gap-2 hover:bg-[#d9a520] transition-colors">
+                <Link to="/contact" className="bg-[#E0B04B] text-[#06122F] px-6 py-3 rounded font-bold text-sm inline-flex items-center gap-2 hover:bg-[#C9972E] transition-colors">
                   {t('common.uploadQuote')} <ChevronRight size={16} className="rtl:rotate-180" />
                 </Link>
-                <span className="text-sm text-gray-500">{t('home.response24h')}</span>
+                <span className="text-sm text-[#06122F]/60">{t('home.response24h')}</span>
               </div>
             </div>
             <div className="space-y-4">
               {priceMatchSteps.map((step) => (
-                <div key={step.num} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex gap-4">
-                  <div className="text-3xl font-bold text-[#8a5a00]">{step.num}</div>
+                <div key={step.num} className="bg-white rounded-xl p-6 shadow-sm border border-[#D6D6D6]/50 flex gap-4">
+                  <div className="text-3xl font-bold text-[#C9972E]">{step.num}</div>
                   <div>
-                    <div className="font-bold text-[#047857]">{t(`home.priceSteps.${step.key}.title`)}</div>
-                    <p className="text-gray-500 text-sm">{t(`home.priceSteps.${step.key}.desc`)}</p>
+                    <div className="font-bold text-[#071B4A]">{t(`home.priceSteps.${step.key}.title`)}</div>
+                    <p className="text-[#06122F]/60 text-sm">{t(`home.priceSteps.${step.key}.desc`)}</p>
                   </div>
                 </div>
               ))}
@@ -385,19 +385,19 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#047857] mb-4">{t('home.ourServices')}</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-[#071B4A] mb-4">{t('home.ourServices')}</h2>
+            <p className="text-[#06122F]/70 max-w-2xl mx-auto">
               {t('home.servicesDesc')}
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
-              <Link key={s.key} to={s.path} className="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-shadow group">
-                <div className="bg-[#047857] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <s.icon size={24} className="text-[#f4c542]" />
+              <Link key={s.key} to={s.path} className="bg-white border border-[#D6D6D6]/50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
+                <div className="bg-[#071B4A] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <s.icon size={24} className="text-[#E0B04B]" />
                 </div>
-                <h3 className="font-bold text-[#047857] mb-2 group-hover:text-[#f4c542] transition-colors">{t(`home.services.${s.key}.title`)}</h3>
-                <p className="text-gray-500 text-sm">{t(`home.services.${s.key}.desc`)}</p>
+                <h3 className="font-bold text-[#071B4A] mb-2 group-hover:text-[#E0B04B] transition-colors">{t(`home.services.${s.key}.title`)}</h3>
+                <p className="text-[#06122F]/60 text-sm">{t(`home.services.${s.key}.desc`)}</p>
               </Link>
             ))}
           </div>
@@ -405,11 +405,11 @@ export default function Home() {
       </section>
 
       {/* Treatments */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#047857] mb-4">{t('home.medicalTreatments')}</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-[#071B4A] mb-4">{t('home.medicalTreatments')}</h2>
+            <p className="text-[#06122F]/70 max-w-2xl mx-auto">
               {t('home.treatmentsDesc')}
             </p>
           </div>
@@ -425,12 +425,12 @@ export default function Home() {
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/400x300/047857/f4c542/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/400x300/071B4A/E0B04B/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-bold text-[#047857] group-hover:text-[#f4c542] transition-colors">{t(`treatments.items.${treatment.key}.title`)}</h3>
-                  <span className="text-[#8a5a00] text-sm inline-flex items-center gap-1 mt-1">
+                  <h3 className="font-bold text-[#071B4A] group-hover:text-[#E0B04B] transition-colors">{t(`treatments.items.${treatment.key}.title`)}</h3>
+                  <span className="text-[#C9972E] text-sm inline-flex items-center gap-1 mt-1">
                     {t('common.inquireNow')} <ChevronRight size={14} className="rtl:rotate-180" />
                   </span>
                 </div>
@@ -438,7 +438,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link to="/treatments" className="inline-flex items-center gap-2 bg-[#047857] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#059669] transition-colors">
+            <Link to="/treatments" className="inline-flex items-center gap-2 bg-[#071B4A] text-white px-6 py-3 rounded font-semibold text-sm hover:bg-[#0A245F] transition-colors">
               {t('common.viewAllTreatments')} <ChevronRight size={16} className="rtl:rotate-180" />
             </Link>
           </div>

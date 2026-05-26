@@ -89,16 +89,16 @@ export default function Treatments() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#047857] text-white py-20">
+      <section className="bg-[#071B4A] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#f4c542]/20 border border-[#f4c542]/40 rounded-full px-4 py-1.5 mb-6">
-            <Award size={14} className="text-[#f4c542]" />
-            <span className="text-xs font-semibold tracking-widest uppercase text-[#f4c542]">{t('treatments.badge')}</span>
+          <div className="inline-flex items-center gap-2 bg-[#E0B04B]/20 border border-[#E0B04B]/40 rounded-full px-4 py-1.5 mb-6">
+            <Award size={14} className="text-[#E0B04B]" />
+            <span className="text-xs font-semibold tracking-widest uppercase text-[#E0B04B]">{t('treatments.badge')}</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            {t('treatments.titleStart')} <span className="italic text-[#f4c542]">{t('treatments.titleHighlight')}</span>
+            {t('treatments.titleStart')} <span className="italic text-[#E0B04B]">{t('treatments.titleHighlight')}</span>
           </h1>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+          <p className="text-[#D6D6D6] max-w-2xl mx-auto text-lg">
             {t('treatments.subtitle')}
           </p>
         </div>
@@ -109,22 +109,22 @@ export default function Treatments() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {treatments.map((treatment) => (
-              <Link key={treatment.key} to={treatment.path} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-gray-100">
-                <div className="h-48 overflow-hidden bg-gray-100">
+              <Link key={treatment.key} to={treatment.path} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-[#D6D6D6]/50">
+                <div className="h-48 overflow-hidden bg-[#D6D6D6]">
                   <img
                     src={treatment.img}
                     alt={t(`treatments.items.${treatment.key}.title`)}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/047857/f4c542/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = `https://placehold.co/600x400/071B4A/E0B04B/png?text=${encodeURIComponent(t(`treatments.items.${treatment.key}.title`))}` }}
                   />
                 </div>
                 <div className="p-6">
-                  <div className="bg-[#047857]/5 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-                    <treatment.icon size={20} className="text-[#047857]" />
+                  <div className="bg-[#071B4A]/5 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+                    <treatment.icon size={20} className="text-[#071B4A]" />
                   </div>
-                  <h3 className="font-bold text-lg text-[#047857] group-hover:text-[#f4c542] transition-colors mb-2">{t(`treatments.items.${treatment.key}.title`)}</h3>
-                  <p className="text-gray-500 text-sm mb-4">{t(`treatments.items.${treatment.key}.desc`)}</p>
-                  <span className="text-[#f4c542] font-semibold text-sm inline-flex items-center gap-1">
+                  <h3 className="font-bold text-lg text-[#071B4A] group-hover:text-[#E0B04B] transition-colors mb-2">{t(`treatments.items.${treatment.key}.title`)}</h3>
+                  <p className="text-[#06122F]/60 text-sm mb-4">{t(`treatments.items.${treatment.key}.desc`)}</p>
+                  <span className="text-[#E0B04B] font-semibold text-sm inline-flex items-center gap-1">
                     {t('common.inquireNow')} <ChevronRight size={14} className="rtl:rotate-180" />
                   </span>
                 </div>

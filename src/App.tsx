@@ -26,10 +26,10 @@ type WindowWithIdleCallback = Window &
 
 function PageFallback() {
   return (
-    <div className="flex min-h-[60vh] items-center justify-center bg-[#fdfcf7] px-4 text-center text-[#047857]">
+    <div className="flex min-h-[60vh] items-center justify-center bg-[#F5F5F5] px-4 text-center text-[#071B4A]">
       <div>
-        <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-[#f4c542]/30 border-t-[#f4c542]" />
-        <p className="text-xs font-bold uppercase tracking-widest text-[#f4c542]">Loading</p>
+        <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-[#E0B04B]/30 border-t-[#E0B04B]" />
+        <p className="text-xs font-bold uppercase tracking-widest text-[#E0B04B]">Loading</p>
       </div>
     </div>
   )

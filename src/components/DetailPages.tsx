@@ -40,6 +40,7 @@ type CareDetailPageProps = {
   overviewTitle: string
   featuresTitle: string
   bookingType: 'service' | 'treatment'
+  imageSrc?: string
 }
 
 type PartnerDetailPageProps = {
@@ -47,42 +48,58 @@ type PartnerDetailPageProps = {
   backTo: string
 }
 
-export function CareDetailPage({ detail, backTo, overviewTitle, featuresTitle, bookingType }: CareDetailPageProps) {
+export function CareDetailPage({ detail, backTo, overviewTitle, featuresTitle, bookingType, imageSrc }: CareDetailPageProps) {
   return (
-    <div className="bg-[#fdfcf7] text-[#047857]">
-      <section className="relative overflow-hidden rounded-b-[2rem] bg-[#047857] px-4 py-16 text-white sm:px-6 lg:px-8">
-        <div className="absolute right-0 top-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#f4c542]/10 blur-3xl" />
+    <div className="bg-[#F5F5F5] text-[#071B4A]">
+      <section className="relative overflow-hidden rounded-b-[2rem] bg-[#071B4A] px-4 py-16 text-white sm:px-6 lg:px-8">
+        {imageSrc && (
+          <img
+            src={imageSrc}
+            alt=""
+            aria-hidden="true"
+            width={1600}
+            height={900}
+            loading="eager"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover opacity-95"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+          />
+        )}
+        {imageSrc && <div className="absolute inset-0 bg-gradient-to-r from-[#071B4A] via-[#071B4A]/90 to-[#06122F]/65" />}
+        <div className="absolute right-0 top-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#E0B04B]/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl">
-          <Link to={backTo} className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#f4c542]">
-            <ArrowLeft size={16} className="rtl:rotate-180" />
-            {detail.backLabel}
-          </Link>
-          <h1 className="mb-4 text-4xl font-bold md:text-6xl">{detail.title}</h1>
-          <p className="max-w-2xl text-lg text-white/70">{detail.subtitle}</p>
+          <div>
+            <Link to={backTo} className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#E0B04B]">
+              <ArrowLeft size={16} className="rtl:rotate-180" />
+              {detail.backLabel}
+            </Link>
+            <h1 className="mb-4 text-4xl font-bold md:text-6xl">{detail.title}</h1>
+            <p className="max-w-2xl text-lg text-white/70">{detail.subtitle}</p>
+          </div>
         </div>
       </section>
 
       <section className="mx-auto grid max-w-[1400px] gap-10 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:px-8">
         <aside className="lg:col-span-4">
-          <div className="sticky top-24 rounded-[2rem] border border-[#f4c542]/10 bg-white p-8 shadow-lg">
+          <div className="sticky top-24 rounded-[2rem] border border-[#E0B04B]/10 bg-white p-8 shadow-lg">
             <h2 className="mb-6 flex items-center gap-2 text-xl font-bold">
-              <Info size={20} className="text-[#f4c542]" />
+              <Info size={20} className="text-[#E0B04B]" />
               {overviewTitle}
             </h2>
-            <p className="mb-8 text-sm leading-relaxed text-gray-600 md:text-base">{detail.overview}</p>
+            <p className="mb-8 text-sm leading-relaxed text-[#06122F]/70 md:text-base">{detail.overview}</p>
             <div className="space-y-4">
-              <h3 className="text-sm font-black uppercase tracking-widest text-[#f4c542]">Key Benefits</h3>
+              <h3 className="text-sm font-black uppercase tracking-widest text-[#E0B04B]">Key Benefits</h3>
               <ul className="space-y-3">
                 {detail.benefits.map((benefit) => (
-                  <li key={benefit} className="flex items-start gap-3 text-sm text-gray-600">
-                    <CheckCircle size={16} className="mt-0.5 shrink-0 text-[#f4c542]" />
+                  <li key={benefit} className="flex items-start gap-3 text-sm text-[#06122F]/70">
+                    <CheckCircle size={16} className="mt-0.5 shrink-0 text-[#E0B04B]" />
                     {benefit}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="mt-8 border-t border-gray-100 pt-8">
-              <Link to="/contact" className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#f4c542] px-6 py-4 text-xs font-black uppercase tracking-widest text-[#064e3b] shadow-lg shadow-[#f4c542]/20 transition-colors hover:bg-[#d9a520]">
+            <div className="mt-8 border-t border-[#D6D6D6]/50 pt-8">
+              <Link to="/contact" className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#E0B04B] px-6 py-4 text-xs font-black uppercase tracking-widest text-[#06122F] shadow-lg shadow-[#E0B04B]/20 transition-colors hover:bg-[#C9972E]">
                 Estimate Your Cost
                 <ChevronRight size={16} className="rtl:rotate-180" />
               </Link>
@@ -95,9 +112,9 @@ export function CareDetailPage({ detail, backTo, overviewTitle, featuresTitle, b
             <h2 className="mb-6 text-2xl font-bold">{featuresTitle}</h2>
             <div className="grid gap-6 md:grid-cols-2">
               {detail.features.map((feature) => (
-                <div key={feature.title} className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+                <div key={feature.title} className="rounded-2xl border border-[#D6D6D6]/50 bg-white p-6 shadow-sm">
                   <h3 className="mb-2 font-bold">{feature.title}</h3>
-                  <p className="text-sm text-gray-600">{feature.description}</p>
+                  <p className="text-sm text-[#06122F]/70">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -105,24 +122,24 @@ export function CareDetailPage({ detail, backTo, overviewTitle, featuresTitle, b
 
           <section>
             <h2 className="mb-8 text-2xl font-bold">How It Works</h2>
-            <div className="relative space-y-8 border-l border-[#f4c542]/40 pl-8 rtl:border-l-0 rtl:border-r rtl:pl-0 rtl:pr-8">
+            <div className="relative space-y-8 border-l border-[#E0B04B]/40 pl-8 rtl:border-l-0 rtl:border-r rtl:pl-0 rtl:pr-8">
               {detail.steps.map((step) => (
                 <div key={step.number} className="relative">
-                  <div className="absolute -left-[41px] top-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#f4c542] bg-[#fdfcf7] rtl:-right-[41px] rtl:left-auto">
-                    <div className="h-1.5 w-1.5 rounded-full bg-[#f4c542]" />
+                  <div className="absolute -left-[41px] top-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-[#E0B04B] bg-[#F5F5F5] rtl:-right-[41px] rtl:left-auto">
+                    <div className="h-1.5 w-1.5 rounded-full bg-[#E0B04B]" />
                   </div>
-                  <p className="mb-1 text-xs font-black uppercase tracking-widest text-[#f4c542]">Step {step.number}</p>
+                  <p className="mb-1 text-xs font-black uppercase tracking-widest text-[#E0B04B]">Step {step.number}</p>
                   <h3 className="text-lg font-bold">{step.title}</h3>
-                  <p className="mt-2 text-sm text-gray-600">{step.description}</p>
+                  <p className="mt-2 text-sm text-[#06122F]/70">{step.description}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          <section className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm">
+          <section className="rounded-2xl border border-[#D6D6D6]/50 bg-white p-8 shadow-sm">
             <h2 className="mb-2 text-2xl font-bold">Planning Your Trip?</h2>
-            <p className="mb-4 text-gray-600">We recommend booking this {bookingType} at least 2 weeks in advance to ensure availability of preferred options.</p>
-            <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-[#f4c542] hover:underline">
+            <p className="mb-4 text-[#06122F]/70">We recommend booking this {bookingType} at least 2 weeks in advance to ensure availability of preferred options.</p>
+            <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-[#E0B04B] hover:underline">
               Contact support for urgent requests
               <ChevronRight size={16} className="rtl:rotate-180" />
             </Link>
@@ -135,19 +152,19 @@ export function CareDetailPage({ detail, backTo, overviewTitle, featuresTitle, b
 
 export function PartnerDetailPage({ detail, backTo }: PartnerDetailPageProps) {
   return (
-    <div className="bg-[#fdfcf7] text-[#047857]">
-      <section className="relative overflow-hidden rounded-b-[2rem] bg-[#047857] px-4 py-16 text-white sm:px-6 lg:px-8">
-        <div className="absolute right-0 top-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#f4c542]/10 blur-3xl" />
+    <div className="bg-[#F5F5F5] text-[#071B4A]">
+      <section className="relative overflow-hidden rounded-b-[2rem] bg-[#071B4A] px-4 py-16 text-white sm:px-6 lg:px-8">
+        <div className="absolute right-0 top-0 h-96 w-96 translate-x-1/2 -translate-y-1/2 rounded-full bg-[#E0B04B]/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl">
-          <Link to={backTo} className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#f4c542]">
+          <Link to={backTo} className="mb-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-[#E0B04B]">
             <ArrowLeft size={16} className="rtl:rotate-180" />
             {detail.backLabel}
           </Link>
-          <p className="mb-3 text-xs font-black uppercase tracking-widest text-[#f4c542]">{detail.category}</p>
+          <p className="mb-3 text-xs font-black uppercase tracking-widest text-[#E0B04B]">{detail.category}</p>
           <h1 className="mb-4 text-4xl font-bold md:text-6xl">{detail.name}</h1>
           <p className="max-w-2xl text-lg text-white/70">{detail.intro}</p>
           <p className="mt-5 inline-flex items-center gap-2 text-sm text-white/60">
-            <MapPin size={16} className="text-[#f4c542]" />
+            <MapPin size={16} className="text-[#E0B04B]" />
             {detail.location}
           </p>
         </div>
@@ -155,39 +172,39 @@ export function PartnerDetailPage({ detail, backTo }: PartnerDetailPageProps) {
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-3">
-          <div className="rounded-[2rem] border border-[#f4c542]/10 bg-white p-8 shadow-lg lg:col-span-1">
+          <div className="rounded-[2rem] border border-[#E0B04B]/10 bg-white p-8 shadow-lg lg:col-span-1">
             <h2 className="mb-6 flex items-center gap-2 text-xl font-bold">
-              <Sparkles size={20} className="text-[#f4c542]" />
+              <Sparkles size={20} className="text-[#E0B04B]" />
               At a Glance
             </h2>
             <div className="space-y-5">
               {detail.glance.map((item) => (
                 <div key={item.title}>
                   <h3 className="font-bold">{item.title}</h3>
-                  <p className="mt-1 text-sm text-gray-600">{item.description}</p>
+                  <p className="mt-1 text-sm text-[#06122F]/70">{item.description}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="space-y-8 lg:col-span-2">
-            <div className="rounded-[2rem] border border-gray-100 bg-white p-8 shadow-sm">
+            <div className="rounded-[2rem] border border-[#D6D6D6]/50 bg-white p-8 shadow-sm">
               <h2 className="mb-4 text-2xl font-bold">{detail.name}</h2>
-              <p className="leading-relaxed text-gray-600">{detail.body}</p>
+              <p className="leading-relaxed text-[#06122F]/70">{detail.body}</p>
             </div>
 
-            <div className="rounded-[2rem] border border-gray-100 bg-white p-8 shadow-sm">
+            <div className="rounded-[2rem] border border-[#D6D6D6]/50 bg-white p-8 shadow-sm">
               <h2 className="mb-5 text-2xl font-bold">{detail.specialtyLabel}</h2>
               <div className="flex flex-wrap gap-3">
                 {detail.specialties.map((specialty) => (
-                  <span key={specialty} className="rounded-full bg-[#047857]/5 px-4 py-2 text-sm font-semibold text-[#047857]">
+                  <span key={specialty} className="rounded-full bg-[#071B4A]/5 px-4 py-2 text-sm font-semibold text-[#071B4A]">
                     {specialty}
                   </span>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-[2rem] bg-[#047857] p-8 text-white">
+            <div className="rounded-[2rem] bg-[#071B4A] p-8 text-white">
               <h2 className="mb-3 text-2xl font-bold">Why {detail.name} for Your Healing?</h2>
               <p className="text-white/70">Partnering with {detail.name} ensures that you receive not just a service, but a holistic experience tailored to your recovery. Their commitment to excellence aligns perfectly with Shifaway's philosophy of care, comfort, and clinical precision.</p>
             </div>
