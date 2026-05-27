@@ -13,7 +13,10 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -21,6 +24,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Show build commit
+        run: |
+          echo "Building commit: $GITHUB_SHA"
+          git log -1 --oneline
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -35,6 +43,11 @@ jobs:
 
       - name: Build
         run: bun run build
+
+      - name: Verify production artifact
+        run: |
+          grep -R "#071B4A" dist/index.html dist/assets | head
+          grep -R "object-cover opacity-95" dist/assets | head
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
